@@ -1,0 +1,24 @@
+# CPU side of copylib's staged copies, isolated (cpu_pack.cpp): copylib's code vs. a plain row loop vs. a fixed-width row loop.
+# Workers on dedicated cores like the ifi sweep base (5,6), plus 1 and 4 workers.
+iterations: 3
+warmup_iterations: 1
+output_csv: 04_cpu_pack/results/cpu_pack_ifi.csv
+
+applications:
+  - name: cpu_pack
+    command: "hostname; ~/finalizing-work/benchmarks/04_cpu_pack/cpu_pack {variant} {direction} {N} {M} {cpus}"
+    parameters:
+      variant: ["copylib", "rowloop", "fixed"]
+      direction: ["pack", "unpack"]
+      N: [1024, 16384, 262144, 1048576, 4194304, 16777216, 67108864, 268435456]
+      M: [2, 3, 4]
+      cpus: ["5", "5,6", "5,6,7,8"]
+    metrics:
+      machine: "^(\\S+)"
+      copy_ns: "copy: ([0-9]+)ns"
+      copy_gbps: "copy:.*?([0-9]+\\.[0-9]+)GB/s"
+      per_row_ns: "per row: ([0-9.]+) ns"
+      fast_path: "fast path (\\S+)"
+      data_size_gib: "Data Size:\\s*([0-9.]+)\\s*GiB"
+      check: "Check: (\\w+)"
+    static: {chunk_bytes: 16777216, copylib: "gpu3dcopylib of 3dcopylib-bench f8d348b", build: "clang++ -O3 (install/llvm)"}

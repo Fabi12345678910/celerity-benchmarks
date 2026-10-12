@@ -1,0 +1,132 @@
+## 6.1 Correctness: runs and non-ok checks per study (all systems)
+                     runs  non_ok
+study                            
+14_verify           11280       0
+15_sweep3          303540       0
+17_preload           2560       0
+18_ifi_nvidia         522       0
+20_sdma_defaults     2088       0
+21_sweep4          280218       0
+22_device_strided    4428       0
+25_final           356892       0
+26_published          522       0
+
+## Link limits (07_limits, plain HIP: hipMemcpy DMA of 1 GiB pinned, and a kernel reading/writing host memory; GB/s, median)
+gpuc4: {'dma_h2d': 'on 11.7 / off 11.9', 'dma_d2h': 'on 11.2 / off 11.5', 'kernel_read': 'on 9.5 / off 9.6', 'kernel_write': 'on 9.2 / off 9.2', 'kernel_read_s4': 'on 2.3 / off 2.3', 'kernel_write_s4': 'on 0.2 / off 0.2'}
+ifi: {'dma_h2d': 'on 82.0 / off 92.8', 'dma_d2h': 'on 64.9 / off 91.3', 'kernel_read': 'on 101.4 / off 101.5', 'kernel_write': 'on 104.2 / off 104.1', 'kernel_read_s4': 'on 35.7 / off 35.7', 'kernel_write_s4': 'on 21.6 / off 21.6'}
+lumi: {'dma_h2d': 'on 25.5 / off 25.5', 'dma_d2h': 'on 25.2 / off 26.4', 'kernel_read': 'on 25.5 / off 25.5', 'kernel_write': 'on 26.0 / off 25.9', 'kernel_read_s4': 'on 6.4 / off 6.4', 'kernel_write_s4': 'on 4.4 / off 4.4'}
+
+## 6.2 Block (contiguous) at 2^28 elements = 1 GiB, GB/s (median), SDMA off; Celerity native = regular copy path, copylib = ROUTE=all
+system  impl dir  celerity_native  copylib_staging  copylib_hostkernel  staging/native
+ gpuc4  acpp H>D            11.30            14.01               14.32            1.24
+ gpuc4  acpp D>H            11.19            14.96               12.48            1.34
+ gpuc4 dpcpp H>D            10.68            12.19               13.56            1.14
+ gpuc4 dpcpp D>H            11.28            13.41               12.26            1.19
+   ifi  acpp H>D            57.27            44.65               46.39            0.78
+   ifi  acpp D>H            89.71            75.33               80.69            0.84
+   ifi dpcpp H>D            41.19            37.32               40.78            0.91
+   ifi dpcpp D>H            89.42            83.76               90.30            0.94
+  lumi  acpp H>D            36.19            22.47               32.76            0.62
+  lumi  acpp D>H            26.81            12.74               25.55            0.48
+  lumi dpcpp H>D            27.45            17.84               22.15            0.65
+  lumi dpcpp D>H            26.60            12.75               25.57            0.48
+
+## 6.3 Strided column copies (4-byte rows, host pitch M*4 B, device contiguous), GB/s of useful data (median), SDMA off
+system  impl dir  M    N  native  staging  hostkernel  stg/native  hk/native  stg/block  hk/block
+ gpuc4  acpp H>D  2 2^20   0.001    3.989       2.150    7020.604   3784.192      0.353     0.190
+ gpuc4  acpp H>D  2 2^23   0.001    5.500       5.588    9671.122   9826.382      0.487     0.495
+ gpuc4  acpp H>D  2 2^28     NaN    6.428       6.935         NaN        NaN      0.569     0.614
+ gpuc4  acpp H>D  4 2^20   0.001    3.681       1.399    6480.613   2463.237      0.326     0.124
+ gpuc4  acpp H>D  4 2^23   0.001    4.048       2.959    7121.683   5204.622      0.358     0.262
+ gpuc4  acpp H>D  4 2^28     NaN    4.531       3.381         NaN        NaN      0.401     0.299
+ gpuc4  acpp D>H  2 2^20   0.001    8.088       0.153   13353.333    252.399      0.723     0.014
+ gpuc4  acpp D>H  2 2^23   0.001    5.076       0.153    8384.597    252.794      0.454     0.014
+ gpuc4  acpp D>H  2 2^28     NaN    4.762       0.153         NaN        NaN      0.426     0.014
+ gpuc4  acpp D>H  4 2^20   0.001    7.051       0.177   11646.006    291.942      0.630     0.016
+ gpuc4  acpp D>H  4 2^23   0.001    2.505       0.178    4138.217    293.534      0.224     0.016
+ gpuc4  acpp D>H  4 2^28     NaN    2.884       0.177         NaN        NaN      0.258     0.016
+ gpuc4 dpcpp H>D  2 2^20   0.001    0.364       0.551     642.942    972.687      0.034     0.052
+ gpuc4 dpcpp H>D  2 2^23   0.001    2.409       2.606    4238.226   4584.445      0.226     0.244
+ gpuc4 dpcpp H>D  2 2^28     NaN    5.660       6.664         NaN        NaN      0.530     0.624
+ gpuc4 dpcpp H>D  4 2^20   0.001    0.382       0.525     673.096    925.083      0.036     0.049
+ gpuc4 dpcpp H>D  4 2^23   0.001    2.090       1.890    3677.161   3325.896      0.196     0.177
+ gpuc4 dpcpp H>D  4 2^28     NaN    4.279       3.351         NaN        NaN      0.401     0.314
+ gpuc4 dpcpp D>H  2 2^20   0.001    5.453       0.152    9009.433    251.752      0.484     0.014
+ gpuc4 dpcpp D>H  2 2^23   0.001    4.607       0.153    7614.359    252.953      0.408     0.014
+ gpuc4 dpcpp D>H  2 2^28     NaN    4.544       0.153         NaN        NaN      0.403     0.014
+ gpuc4 dpcpp D>H  4 2^20   0.001    3.789       0.177    6257.290    291.791      0.336     0.016
+ gpuc4 dpcpp D>H  4 2^23   0.001    2.838       0.177    4689.500    292.723      0.252     0.016
+ gpuc4 dpcpp D>H  4 2^28     NaN    2.844       0.177         NaN        NaN      0.252     0.016
+   ifi  acpp H>D  2 2^20   0.001    0.973       0.526    1108.872    599.063      0.017     0.009
+   ifi  acpp H>D  2 2^23   0.001    4.248       3.897    4821.235   4423.330      0.074     0.068
+   ifi  acpp H>D  2 2^28     NaN   13.390      32.263         NaN        NaN      0.234     0.563
+   ifi  acpp H>D  4 2^20   0.001    0.953       0.512    1094.240    587.039      0.017     0.009
+   ifi  acpp H>D  4 2^23   0.001    3.804       3.486    4322.185   3960.625      0.066     0.061
+   ifi  acpp H>D  4 2^28     NaN    9.345      25.658         NaN        NaN      0.163     0.448
+   ifi  acpp D>H  2 2^20   0.001   13.264      15.408   15125.546  17569.781      0.148     0.172
+   ifi  acpp D>H  2 2^23   0.001    9.149       8.897   10545.570  10254.676      0.102     0.099
+   ifi  acpp D>H  2 2^28     NaN   13.876      39.329         NaN        NaN      0.155     0.438
+   ifi  acpp D>H  4 2^20   0.001   12.994      10.395   14920.060  11935.947      0.145     0.116
+   ifi  acpp D>H  4 2^23   0.001    4.805       9.157    5521.678  10523.624      0.054     0.102
+   ifi  acpp D>H  4 2^28     NaN    8.938      22.250         NaN        NaN      0.100     0.248
+   ifi dpcpp H>D  2 2^20   0.001    0.333       0.555     382.693    637.003      0.008     0.013
+   ifi dpcpp H>D  2 2^23   0.001    2.358       2.961    2684.560   3371.583      0.057     0.072
+   ifi dpcpp H>D  2 2^28     NaN   12.837      34.359         NaN        NaN      0.312     0.834
+   ifi dpcpp H>D  4 2^20   0.001    0.316       0.574     360.492    654.816      0.008     0.014
+   ifi dpcpp H>D  4 2^23   0.001    2.362       2.960    2693.983   3376.685      0.057     0.072
+   ifi dpcpp H>D  4 2^28     NaN    9.086      27.008         NaN        NaN      0.221     0.656
+   ifi dpcpp D>H  2 2^20   0.001   12.294      15.147   14118.587  17395.504      0.137     0.169
+   ifi dpcpp D>H  2 2^23   0.001    4.539       7.663    5236.375   8840.287      0.051     0.086
+   ifi dpcpp D>H  2 2^28     NaN   13.813      40.251         NaN        NaN      0.154     0.450
+   ifi dpcpp D>H  4 2^20   0.001    9.404      11.067   10752.292  12654.465      0.105     0.124
+   ifi dpcpp D>H  4 2^23   0.001    8.482      20.207    9776.168  23290.172      0.095     0.226
+   ifi dpcpp D>H  4 2^28     NaN    8.928      22.698         NaN        NaN      0.100     0.254
+  lumi  acpp H>D  2 2^20   0.001    2.687       2.582    4546.706   4368.424      0.074     0.071
+  lumi  acpp H>D  2 2^23   0.001    6.023       9.863   10144.382  16610.767      0.166     0.273
+  lumi  acpp H>D  2 2^28     NaN    9.826      18.526         NaN        NaN      0.272     0.512
+  lumi  acpp H>D  4 2^20   0.001    2.455       2.185    4174.483   3715.770      0.068     0.060
+  lumi  acpp H>D  4 2^23   0.001    4.608       6.842    7787.611  11562.002      0.127     0.189
+  lumi  acpp H>D  4 2^28     NaN    6.667       9.877         NaN        NaN      0.184     0.273
+  lumi  acpp D>H  2 2^20   0.001    0.347       0.366     637.433    672.309      0.013     0.014
+  lumi  acpp D>H  2 2^23   0.001    2.337       2.254    4285.771   4133.527      0.087     0.084
+  lumi  acpp D>H  2 2^28     NaN    6.127       8.797         NaN        NaN      0.229     0.328
+  lumi  acpp D>H  4 2^20   0.001    0.365       0.371     674.162    684.167      0.014     0.014
+  lumi  acpp D>H  4 2^23   0.001    2.730       2.268    5020.981   4170.062      0.102     0.085
+  lumi  acpp D>H  4 2^28     NaN    3.740       4.439         NaN        NaN      0.140     0.166
+  lumi dpcpp H>D  2 2^20   0.000    0.178       0.329     357.526    660.249      0.006     0.012
+  lumi dpcpp H>D  2 2^23   0.000    1.454       1.419    2933.543   2863.521      0.053     0.052
+  lumi dpcpp H>D  2 2^28     NaN    8.943      14.870         NaN        NaN      0.326     0.542
+  lumi dpcpp H>D  4 2^20   0.000    0.177       0.324     356.638    652.562      0.006     0.012
+  lumi dpcpp H>D  4 2^23   0.000    1.433       1.238    3092.177   2671.016      0.052     0.045
+  lumi dpcpp H>D  4 2^28     NaN    6.237       8.708         NaN        NaN      0.227     0.317
+  lumi dpcpp D>H  2 2^20   0.000    4.663       6.726    9335.816  13467.130      0.175     0.253
+  lumi dpcpp D>H  2 2^23   0.000    5.935       8.435   11981.056  17029.066      0.223     0.317
+  lumi dpcpp D>H  2 2^28     NaN    6.083       8.873         NaN        NaN      0.229     0.334
+  lumi dpcpp D>H  4 2^20   0.000    3.151       3.811    6314.637   7638.326      0.118     0.143
+  lumi dpcpp D>H  4 2^23   0.000    3.687       4.357    8149.883   9630.263      0.139     0.164
+  lumi dpcpp D>H  4 2^28     NaN    3.724       4.460         NaN        NaN      0.140     0.168
+(native measured only up to 2^23 rows; 'block' = Celerity native contiguous copy of 1 GiB on the same system/impl/direction)
+
+## 6.4 Host-strided vs device-strided (M = 4, N = 2^28 rows, AdaptiveCpp, GB/s, median; final sweep, pinning on)
+| | | gpuc4 | ifi | lumi |
+|---|---|---|---|---|
+| H>D | host-strided, staging | 4.56 | 9.33 | 6.70 |
+| H>D | host-strided, host kernel | 3.39 | 26.88 | 9.87 |
+| H>D | device-strided, staging | 8.82 | 13.22 | 18.43 |
+| H>D | device-strided, host kernel | 10.79 | 13.96 | 31.62 |
+| D>H | host-strided, staging | 2.89 | 8.85 | 3.76 |
+| D>H | host-strided, host kernel | 0.18 | 21.31 | 4.44 |
+| D>H | device-strided, staging | 12.28 | 30.76 | 10.12 |
+| D>H | device-strided, host kernel | 16.73 | 42.55 | 25.84 |
+
+## 6.5 NVIDIA (ifi RTX 2070, PCIe 3.0 x16, AdaptiveCpp + Celerity's CUDA backend), strided D>H GB/s (median); H>D not usable (first-use cost)
+cfg          strided_hk_defaults  strided_native_copylib_off  strided_stg_defaults
+M N                                                                               
+1 65536                    1.492                       1.254                 1.246
+  1048576                  2.213                       9.019                 9.684
+  16777216                12.753                      15.590                10.023
+  268435456               16.270                      16.058                15.998
+2 65536                    0.102                       0.184                 0.650
+  1048576                  0.104                       0.188                 1.266
+  16777216                 0.113                       0.209                 6.377
+  268435456                0.059                       0.208                 5.207

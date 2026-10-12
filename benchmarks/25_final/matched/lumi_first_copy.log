@@ -1,0 +1,45 @@
+nid005882
+CPU(s):                                  128
+Model name:                              AMD EPYC 7A53 64-Core Processor
+Thread(s) per core:                      2
+Core(s) per socket:                      64
+Socket(s):                               1
+CPU(s) scaling MHz:                      56%
+NUMA node(s):                            4
+               total        used        free      shared  buff/cache   available
+Mem:             503          22         482           5           5         480
+== SDMA=0 h2d
+h2d copy 0: wall 24.389 GB/s  event 24.408 GB/s
+h2d copy 1: wall 25.478 GB/s  event 25.484 GB/s
+h2d copy 2: wall 25.483 GB/s  event 25.486 GB/s
+h2d copy 3: wall 25.506 GB/s  event 25.509 GB/s
+h2d copy 4: wall 25.510 GB/s  event 25.513 GB/s
+h2d copy 5: wall 25.482 GB/s  event 25.485 GB/s
+== SDMA=0 d2h
+d2h copy 0: wall 26.673 GB/s  event 26.687 GB/s
+d2h copy 1: wall 27.172 GB/s  event 27.179 GB/s
+d2h copy 2: wall 27.164 GB/s  event 27.168 GB/s
+d2h copy 3: wall 27.158 GB/s  event 27.162 GB/s
+d2h copy 4: wall 26.724 GB/s  event 26.727 GB/s
+d2h copy 5: wall 27.172 GB/s  event 27.176 GB/s
+== SDMA=1 h2d
+h2d copy 0: wall 22.779 GB/s  event 22.790 GB/s
+h2d copy 1: wall 25.494 GB/s  event 25.500 GB/s
+h2d copy 2: wall 25.498 GB/s  event 25.502 GB/s
+h2d copy 3: wall 25.498 GB/s  event 25.501 GB/s
+h2d copy 4: wall 25.497 GB/s  event 25.501 GB/s
+h2d copy 5: wall 25.499 GB/s  event 25.502 GB/s
+== SDMA=1 d2h
+d2h copy 0: wall 20.339 GB/s  event 20.347 GB/s
+d2h copy 1: wall 25.167 GB/s  event 25.174 GB/s
+d2h copy 2: wall 25.169 GB/s  event 25.172 GB/s
+d2h copy 3: wall 25.171 GB/s  event 25.174 GB/s
+d2h copy 4: wall 25.172 GB/s  event 25.175 GB/s
+d2h copy 5: wall 25.172 GB/s  event 25.175 GB/s
+== Celerity block_transfer 2^28 (final-bench, defaults, SDMA off), first access as measured in the sweeps
+first access (read only) (host to device): 29327048ns, 36.61268000788896160GB/s 
+device to host: 40278162ns, 26.65816339881645902GB/s 
+first access (read only) (host to device): 29179557ns, 36.79774247429458711GB/s 
+device to host: 40141270ns, 26.74907455593707084GB/s 
+first access (read only) (host to device): 29224443ns, 36.74122459750558534GB/s 
+device to host: 40432034ns, 26.55671055282551407GB/s 

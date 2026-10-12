@@ -1,0 +1,16 @@
+# rerun of the SDMA-off half of <system>_linkbw.yaml (the first run had HSA_ENABLE_SDMA=0 after taskset)
+iterations: 3
+warmup_iterations: 1
+output_csv: 07_limits/results/gpuc4_linkbw_sdma_off.csv
+
+applications:
+  - name: linkbw
+    command: "hostname; {env} taskset -c 1 ~/finalizing-work/benchmarks/07_limits/linkbw {test} {mib} 5"
+    parameters:
+      env: ["HSA_ENABLE_SDMA=0"]
+      test: ["dma_h2d", "dma_d2h", "dma_bidir", "kernel_read", "kernel_write", "kernel_read_s2", "kernel_read_s4", "kernel_write_s2", "kernel_write_s4"]
+      mib: [1, 4, 16, 64, 256, 1024]
+    metrics:
+      machine: "^(\\S+)"
+      gbps: "(?:dma|kernel)\\w*: ([0-9.]+)GB/s"
+      load_gbps: "load: ([0-9.]+)GB/s"

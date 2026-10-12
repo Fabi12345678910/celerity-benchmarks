@@ -1,0 +1,2 @@
+22_device_strided/lumi/device_stg_base.yaml 22_device_strided/lumi/device_hk_base.yaml
+22_device_strided/lumi/device_native_1.yaml 22_device_strided/lumi/device_native_2.yaml

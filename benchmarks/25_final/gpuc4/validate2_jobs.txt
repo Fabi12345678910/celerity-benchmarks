@@ -1,0 +1,5 @@
+25_final/gpuc4/validate2_strided_clean2.yaml 25_final/gpuc4/validate2_strided_bench.yaml
+25_final/gpuc4/validate2_block_clean2.yaml 25_final/gpuc4/validate2_block_bench.yaml
+25_final/gpuc4/validate2_both_clean2.yaml 25_final/gpuc4/validate2_both_bench.yaml
+25_final/gpuc4/validate2_rows_clean2.yaml 25_final/gpuc4/validate2_rows_bench.yaml
+25_final/gpuc4/validate2_device_clean2.yaml 25_final/gpuc4/validate2_device_bench.yaml

@@ -1,0 +1,16 @@
+# memcpy(64 bytes), 12th Gen Intel(R) Core(TM) i9-12900, ldd (Ubuntu GLIBC 2.39-0ubuntu8.9) 2.39
+0x555555555150 <_Z8copy_onePvPKvm>:	jmp    0x555555555030 <memcpy@plt>
+0x555555555030 <memcpy@plt>:	jmp    QWORD PTR [rip+0x2f92]        # 0x555555557fc8 <memcpy@got.plt>
+0x7ffff7988d80 <__memcpy_avx_unaligned_erms>:	endbr64
+0x7ffff7988d84 <__memcpy_avx_unaligned_erms+4>:	mov    rax,rdi
+0x7ffff7988d87 <__memcpy_avx_unaligned_erms+7>:	cmp    rdx,0x20
+0x7ffff7988d8b <__memcpy_avx_unaligned_erms+11>:	jb     0x7ffff7988db0 <__memcpy_avx_unaligned_erms+48>
+0x7ffff7988d8d <__memcpy_avx_unaligned_erms+13>:	vmovdqu ymm0,YMMWORD PTR [rsi]
+0x7ffff7988d91 <__memcpy_avx_unaligned_erms+17>:	cmp    rdx,0x40
+0x7ffff7988d95 <__memcpy_avx_unaligned_erms+21>:	ja     0x7ffff7988e40 <__memcpy_avx_unaligned_erms+192>
+0x7ffff7988d9b <__memcpy_avx_unaligned_erms+27>:	vmovdqu ymm1,YMMWORD PTR [rsi+rdx*1-0x20]
+0x7ffff7988da1 <__memcpy_avx_unaligned_erms+33>:	vmovdqu YMMWORD PTR [rdi],ymm0
+0x7ffff7988da5 <__memcpy_avx_unaligned_erms+37>:	vmovdqu YMMWORD PTR [rdi+rdx*1-0x20],ymm1
+0x7ffff7988dab <__memcpy_avx_unaligned_erms+43>:	vzeroupper
+0x7ffff7988dae <__memcpy_avx_unaligned_erms+46>:	ret
+instructions executed: 14
