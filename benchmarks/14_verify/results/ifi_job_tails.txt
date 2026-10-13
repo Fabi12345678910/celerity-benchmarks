@@ -1,0 +1,29 @@
+==> slurm-fw-bench-1706048.log <==
+
+Done. Results written to 14_verify/results/ifi_transfer_acpp.csv
+EXIT=0  end: Mon Oct  5 08:56:29 CEST 2026
+
+==> slurm-fw-bench-1706049.log <==
+
+Done. Results written to 14_verify/results/ifi_rows_acpp.csv
+EXIT=0  end: Mon Oct  5 09:03:58 CEST 2026
+
+==> slurm-fw-bench-1706050.log <==
+
+Done. Results written to 14_verify/results/ifi_both_acpp.csv
+EXIT=0  end: Mon Oct  5 08:56:15 CEST 2026
+
+==> slurm-fw-bench-1706052.log <==
+
+Done. Results written to 14_verify/results/ifi_transfer_dpcpp0326.csv
+EXIT=0  end: Mon Oct  5 08:52:19 CEST 2026
+
+==> slurm-fw-bench-1706053.log <==
+
+Done. Results written to 14_verify/results/ifi_rows_dpcpp0326.csv
+EXIT=0  end: Mon Oct  5 08:59:34 CEST 2026
+
+==> slurm-fw-bench-1706054.log <==
+
+Done. Results written to 14_verify/results/ifi_both_dpcpp0326.csv
+EXIT=0  end: Mon Oct  5 08:51:37 CEST 2026

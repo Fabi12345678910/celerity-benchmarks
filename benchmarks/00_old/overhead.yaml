@@ -1,0 +1,10 @@
+iterations: 20
+warmup_iterations: 5
+output_csv: results.csv
+
+applications:
+  - name: Celerity
+    command: "./block_transfer 1"
+    metrics:
+      first_access_ns: "first access \\(read only\\) \\(host to device\\):\\s*([0-9]+)ns"
+      second_access_ns: "read only:\\s*([0-9]+)ns"

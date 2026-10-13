@@ -1,0 +1,5 @@
+25_final/lumi/validate_strided_clean.yaml 25_final/lumi/validate_strided_bench.yaml
+25_final/lumi/validate_block_clean.yaml 25_final/lumi/validate_block_bench.yaml
+25_final/lumi/validate_both_clean.yaml 25_final/lumi/validate_both_bench.yaml
+25_final/lumi/validate_rows_clean.yaml 25_final/lumi/validate_rows_bench.yaml
+25_final/lumi/validate_device_clean.yaml 25_final/lumi/validate_device_bench.yaml

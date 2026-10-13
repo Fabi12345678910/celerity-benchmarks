@@ -1,0 +1,72 @@
+ifi: 262 configurations, 56 jobs of at most 105 min, 4997 min in total (strided 3745, block 1252)
+job 1: 3 configs, 83 min: strided_stg_base .. strided_stg_old
+job 2: 3 configs, 83 min: strided_stg_place_all .. strided_stg_place_dedicated
+job 3: 3 configs, 86 min: strided_stg_place_same_core .. strided_hk_defaults
+job 4: 3 configs, 87 min: strided_hk_old .. strided_hk_place_inherit
+job 5: 3 configs, 85 min: strided_hk_place_dedicated .. strided_stg_min_bytes_64B
+job 6: 3 configs, 79 min: strided_stg_min_bytes_256B .. strided_stg_min_bytes_4KiB
+job 7: 3 configs, 82 min: strided_stg_min_bytes_16KiB .. strided_stg_min_bytes_256KiB
+job 8: 3 configs, 101 min: strided_stg_min_bytes_1MiB .. strided_stg_min_bytes_16MiB
+job 9: 3 configs, 80 min: strided_stg_queues_1 .. strided_stg_queues_6
+job 10: 3 configs, 80 min: strided_stg_queues_8 .. strided_stg_queues_16
+job 11: 3 configs, 92 min: strided_stg_queues_24 .. strided_stg_queues_64
+job 12: 3 configs, 85 min: strided_stg_staging_bytes_4KiB .. strided_stg_staging_bytes_256KiB
+job 13: 4 configs, 103 min: strided_stg_staging_bytes_1MiB .. strided_stg_staging_bytes_16MiB
+job 14: 3 configs, 81 min: strided_stg_staging_bytes_64MiB .. strided_stg_staging_bytes_512MiB
+job 15: 3 configs, 95 min: strided_stg_staging_bytes_1GiB .. strided_stg_chunk_4KiB
+job 16: 4 configs, 104 min: strided_stg_chunk_16KiB .. strided_stg_chunk_512KiB
+job 17: 4 configs, 102 min: strided_stg_chunk_2MiB .. strided_stg_chunk_16MiB
+job 18: 3 configs, 81 min: strided_stg_chunk_32MiB .. strided_stg_plan_order_dynamic
+job 19: 3 configs, 80 min: strided_stg_plan_order_interleaved .. strided_stg_pageable
+job 20: 3 configs, 82 min: strided_stg_sdma_off .. strided_hk_min_bytes_256B
+job 21: 3 configs, 83 min: strided_hk_min_bytes_1KiB .. strided_hk_min_bytes_16KiB
+job 22: 3 configs, 88 min: strided_hk_min_bytes_64KiB .. strided_hk_min_bytes_1MiB
+job 23: 3 configs, 105 min: strided_hk_min_bytes_4MiB .. strided_hk_queues_1
+job 24: 3 configs, 82 min: strided_hk_queues_3 .. strided_hk_queues_8
+job 25: 3 configs, 86 min: strided_hk_queues_12 .. strided_hk_queues_24
+job 26: 3 configs, 100 min: strided_hk_queues_32 .. strided_hk_staging_bytes_4KiB
+job 27: 3 configs, 84 min: strided_hk_staging_bytes_64KiB .. strided_hk_staging_bytes_1MiB
+job 28: 3 configs, 82 min: strided_hk_staging_bytes_4MiB .. strided_hk_staging_bytes_16MiB
+job 29: 3 configs, 85 min: strided_hk_staging_bytes_64MiB .. strided_hk_staging_bytes_512MiB
+job 30: 3 configs, 100 min: strided_hk_staging_bytes_1GiB .. strided_hk_chunk_4KiB
+job 31: 3 configs, 83 min: strided_hk_chunk_16KiB .. strided_hk_chunk_256KiB
+job 32: 3 configs, 80 min: strided_hk_chunk_512KiB .. strided_hk_chunk_4MiB
+job 33: 3 configs, 81 min: strided_hk_chunk_8MiB .. strided_hk_chunk_32MiB
+job 34: 3 configs, 87 min: strided_hk_plan_order_block .. strided_hk_plan_order_interleaved
+job 35: 3 configs, 85 min: strided_hk_wait_poll .. strided_hk_max_elem_size_1
+job 36: 3 configs, 87 min: strided_hk_max_elem_size_2 .. strided_hk_max_elem_size_16
+job 37: 3 configs, 85 min: strided_hk_max_elem_size_32 .. strided_hk_elems_per_item_2
+job 38: 3 configs, 82 min: strided_hk_elems_per_item_8 .. strided_hk_elems_per_item_32
+job 39: 3 configs, 82 min: strided_hk_elems_per_item_64 .. strided_hk_elems_per_item_256
+job 40: 3 configs, 82 min: strided_hk_elems_per_item_1024 .. strided_hk_wg_size_2
+job 41: 3 configs, 82 min: strided_hk_wg_size_4 .. strided_hk_wg_size_16
+job 42: 3 configs, 82 min: strided_hk_wg_size_64 .. strided_hk_wg_size_512
+job 43: 3 configs, 101 min: strided_hk_wg_size_1024 .. strided_native_copylib_off_2
+job 44: 11 configs, 102 min: block_native_base .. block_hk_defaults
+job 45: 11 configs, 104 min: block_hk_old .. block_stg_min_bytes_64KiB
+job 46: 11 configs, 102 min: block_stg_min_bytes_256KiB .. block_stg_queues_16
+job 47: 11 configs, 104 min: block_stg_queues_24 .. block_stg_staging_bytes_128MiB
+job 48: 10 configs, 96 min: block_stg_staging_bytes_512MiB .. block_stg_plan_order_block
+job 49: 11 configs, 104 min: block_stg_plan_order_dynamic .. block_hk_min_bytes_64KiB
+job 50: 10 configs, 97 min: block_hk_min_bytes_256KiB .. block_hk_queues_12
+job 51: 10 configs, 100 min: block_hk_queues_16 .. block_hk_staging_bytes_16MiB
+job 52: 10 configs, 101 min: block_hk_staging_bytes_64MiB .. block_hk_chunk_4MiB
+job 53: 10 configs, 97 min: block_hk_chunk_8MiB .. block_hk_max_elem_size_16
+job 54: 10 configs, 97 min: block_hk_max_elem_size_32 .. block_hk_elems_per_item_1024
+job 55: 10 configs, 99 min: block_hk_wg_size_1 .. block_stg_chunk_1KiB
+job 56: 5 configs, 50 min: block_stg_chunk_4KiB .. block_hk_staging_bytes_4KiB
+strided_hk_min_bytes_16MiB                                43.1 min
+strided_stg_min_bytes_16MiB                               41.1 min
+strided_hk_queues_64                                      37.3 min
+strided_hk_chunk_1KiB                                     37.1 min
+strided_native_copylib_off_1                              36.8 min
+strided_native_copylib_off_2                              36.8 min
+strided_stg_queues_64                                     35.6 min
+strided_stg_chunk_1KiB                                    35.4 min
+strided_hk_staging_bytes_4KiB                             32.8 min
+strided_hk_min_bytes_4MiB                                 32.6 min
+strided_hk_staging_bytes_1GiB                             31.6 min
+strided_stg_staging_bytes_4KiB                            31.2 min
+strided_hk_chunk_4KiB                                     31.2 min
+strided_stg_min_bytes_4MiB                                31.1 min
+strided_hk_queues_32                                      30.3 min

@@ -1,0 +1,1 @@
+- 20_sdma_defaults/lumi/strided_stg_sdma.yaml 20_sdma_defaults/lumi/strided_hk_sdma.yaml

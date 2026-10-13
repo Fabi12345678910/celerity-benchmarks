@@ -1,0 +1,2 @@
+22_device_strided/gpuc4/device_stg_base.yaml 22_device_strided/gpuc4/device_hk_base.yaml
+22_device_strided/gpuc4/device_native_1.yaml 22_device_strided/gpuc4/device_native_2.yaml

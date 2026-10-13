@@ -1,0 +1,49 @@
+gpuc4
+CPU(s):                                  24
+Model name:                              12th Gen Intel(R) Core(TM) i9-12900
+Thread(s) per core:                      2
+Core(s) per socket:                      16
+Socket(s):                               1
+CPU(s) scaling MHz:                      18%
+== SDMA=0 h2d
+h2d copy 0: wall 12.013 GB/s  event 12.020 GB/s
+h2d copy 1: wall 11.855 GB/s  event 11.857 GB/s
+h2d copy 2: wall 11.824 GB/s  event 11.827 GB/s
+h2d copy 3: wall 11.899 GB/s  event 11.901 GB/s
+h2d copy 4: wall 11.981 GB/s  event 11.984 GB/s
+h2d copy 5: wall 11.833 GB/s  event 11.836 GB/s
+== SDMA=0 d2h
+d2h copy 0: wall 11.148 GB/s  event 11.151 GB/s
+d2h copy 1: wall 11.355 GB/s  event 11.360 GB/s
+d2h copy 2: wall 11.444 GB/s  event 11.446 GB/s
+d2h copy 3: wall 11.479 GB/s  event 11.482 GB/s
+d2h copy 4: wall 12.003 GB/s  event 12.005 GB/s
+d2h copy 5: wall 12.052 GB/s  event 12.054 GB/s
+== SDMA=1 h2d
+h2d copy 0: wall 11.095 GB/s  event 11.098 GB/s
+h2d copy 1: wall 11.640 GB/s  event 11.642 GB/s
+h2d copy 2: wall 11.636 GB/s  event 11.638 GB/s
+h2d copy 3: wall 11.657 GB/s  event 11.659 GB/s
+h2d copy 4: wall 11.658 GB/s  event 11.660 GB/s
+h2d copy 5: wall 11.668 GB/s  event 11.670 GB/s
+== SDMA=1 d2h
+d2h copy 0: wall 10.792 GB/s  event 10.795 GB/s
+d2h copy 1: wall 11.221 GB/s  event 11.224 GB/s
+d2h copy 2: wall 11.181 GB/s  event 11.183 GB/s
+d2h copy 3: wall 11.206 GB/s  event 11.208 GB/s
+d2h copy 4: wall 11.202 GB/s  event 11.204 GB/s
+d2h copy 5: wall 11.201 GB/s  event 11.203 GB/s
+== Celerity block_transfer 2^28 (final-bench, defaults, SDMA off), first access as measured in the sweeps
+first access (read only) (host to device): 96059397ns, 11.17789469363419030GB/s 
+device to host: 91630447ns, 11.71817729973531641GB/s 
+first access (read only) (host to device): 99117498ns, 10.83301985689751845GB/s 
+device to host: 95209399ns, 11.27768723758039826GB/s 
+first access (read only) (host to device): 96915814ns, 11.07911887321092870GB/s 
+device to host: 96799769ns, 11.09240068537766888GB/s 
+== same, copylib routed (CELERITY_COPYLIB_ROUTE=all, staging defaults)
+first access (read only) (host to device): 76453162ns, 14.04443970544998521GB/s 
+device to host: 70704159ns, 15.18640259903239986GB/s 
+first access (read only) (host to device): 76526587ns, 14.03096448035765675GB/s 
+device to host: 71574673ns, 15.00170072729497406GB/s 
+first access (read only) (host to device): 77091379ns, 13.92816989303045183GB/s 
+device to host: 70848381ns, 15.15548850721091334GB/s 

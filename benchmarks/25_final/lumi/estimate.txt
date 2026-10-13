@@ -1,0 +1,24 @@
+lumi: 297 YAMLs in 23 jobs, about 1869 min (31.1 h) in total
+job 1: 10 yamls, 83 min: sweep_strided_native .. sweep_strided_hk_anchor_j01
+job 2: 13 yamls, 80 min: sweep_strided_stg_min_bytes_256B .. sweep_strided_hk_anchor_j02
+job 3: 13 yamls, 81 min: sweep_strided_stg_queues_12 .. sweep_strided_hk_anchor_j03
+job 4: 12 yamls, 78 min: sweep_strided_stg_staging_bytes_128MiB .. sweep_strided_hk_anchor_j04
+job 5: 13 yamls, 81 min: sweep_strided_stg_chunk_32MiB .. sweep_strided_hk_anchor_j05
+job 6: 13 yamls, 80 min: sweep_strided_stg_grid_q8_c4MiB .. sweep_strided_hk_anchor_j06
+job 7: 13 yamls, 82 min: sweep_strided_hk_place_far .. sweep_strided_hk_anchor_j07
+job 8: 13 yamls, 82 min: sweep_strided_hk_queues_4 .. sweep_strided_hk_anchor_j08
+job 9: 12 yamls, 78 min: sweep_strided_hk_staging_bytes_4MiB .. sweep_strided_hk_anchor_j09
+job 10: 13 yamls, 83 min: sweep_strided_hk_chunk_1MiB .. sweep_strided_hk_anchor_j10
+job 11: 13 yamls, 82 min: sweep_strided_hk_grid_q2_c2MiB .. sweep_strided_hk_anchor_j11
+job 12: 13 yamls, 80 min: sweep_strided_hk_wait_poll .. sweep_strided_hk_anchor_j12
+job 13: 13 yamls, 82 min: sweep_strided_hk_elems_per_item_16 .. sweep_strided_hk_anchor_j13
+job 14: 25 yamls, 83 min: sweep_strided_hk_wg_size_256 .. sweep_block_hk_anchor_j14
+job 15: 26 yamls, 80 min: sweep_block_stg_queues_8 .. sweep_block_hk_anchor_j15
+job 16: 25 yamls, 77 min: sweep_block_stg_sdma_on .. sweep_block_hk_anchor_j16
+job 17: 25 yamls, 81 min: sweep_block_hk_queues_64 .. sweep_block_hk_anchor_j17
+job 18: 22 yamls, 65 min: sweep_block_hk_max_elem_size_8 .. sweep_block_hk_anchor_j18
+job 19: 2 yamls, 84 min: prog_sparse .. prog_sparse_native
+job 20: 2 yamls, 100 min: prog_both .. prog_both_native
+job 21: 2 yamls, 100 min: prog_rows .. prog_rows_native
+job 22: 3 yamls, 88 min: prog_device .. pair_preload
+job 23: 1 yamls, 60 min: pair_sdma .. pair_sdma

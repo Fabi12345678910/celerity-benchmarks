@@ -1,0 +1,3 @@
+gc20 15_sweep3/ifi/strided_stg_rerun_r1.yaml 15_sweep3/ifi/strided_hk_rerun_r1.yaml 15_sweep3/ifi/block_stg_rerun_r1.yaml 15_sweep3/ifi/block_hk_rerun_r1.yaml
+gc22 15_sweep3/ifi/strided_stg_rerun_r2.yaml 15_sweep3/ifi/strided_hk_rerun_r2.yaml 15_sweep3/ifi/block_stg_rerun_r2.yaml 15_sweep3/ifi/block_hk_rerun_r2.yaml
+gc26 15_sweep3/ifi/strided_stg_rerun_r3.yaml 15_sweep3/ifi/strided_hk_rerun_r3.yaml 15_sweep3/ifi/block_stg_rerun_r3.yaml 15_sweep3/ifi/block_hk_rerun_r3.yaml

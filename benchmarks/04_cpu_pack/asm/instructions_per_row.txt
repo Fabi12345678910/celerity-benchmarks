@@ -1,0 +1,6 @@
+# instructions per 4-byte row (pack, pitch 8 bytes), 12th Gen Intel(R) Core(TM) i9-12900, ldd (Ubuntu GLIBC 2.39-0ubuntu8.9) 2.39
+copylib: 256 rows 39971, 512 rows 79907, per row 156.00
+rows_runtime: 256 rows 5814, 512 rows 11574, per row 22.50
+rows_fixed4: 256 rows 873, 512 rows 1705, per row 3.25
+pack_var: 256 rows 5806, 512 rows 11566, per row 22.50
+pack_fixed4: 256 rows 853, 512 rows 1685, per row 3.25

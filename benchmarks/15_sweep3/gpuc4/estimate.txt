@@ -1,0 +1,28 @@
+gpuc4: 262 configurations, 12 jobs of at most 105 min, 1216 min in total (strided 886, block 329)
+job 1: 13 configs, 105 min: strided_stg_base .. strided_hk_place_dedicated
+job 2: 17 configs, 104 min: strided_hk_place_same_core .. strided_stg_queues_16
+job 3: 16 configs, 104 min: strided_stg_queues_24 .. strided_stg_chunk_4KiB
+job 4: 16 configs, 100 min: strided_stg_chunk_16KiB .. strided_hk_min_bytes_64B
+job 5: 16 configs, 102 min: strided_hk_min_bytes_256B .. strided_hk_queues_24
+job 6: 15 configs, 102 min: strided_hk_queues_32 .. strided_hk_chunk_4KiB
+job 7: 15 configs, 104 min: strided_hk_chunk_16KiB .. strided_hk_max_elem_size_1
+job 8: 14 configs, 100 min: strided_hk_max_elem_size_2 .. strided_hk_wg_size_1
+job 9: 27 configs, 105 min: strided_hk_wg_size_2 .. block_stg_min_bytes_64B
+job 10: 41 configs, 105 min: block_stg_min_bytes_256B .. block_stg_pageable
+job 11: 38 configs, 103 min: block_stg_sdma_off .. block_hk_chunk_8MiB
+job 12: 34 configs, 82 min: block_hk_plan_order_block .. block_hk_staging_bytes_4KiB
+strided_hk_staging_bytes_1GiB                             11.8 min
+strided_stg_staging_bytes_1GiB                            11.3 min
+strided_hk_staging_bytes_512MiB                            8.8 min
+strided_stg_staging_bytes_512MiB                           8.4 min
+strided_hk_base                                            8.3 min
+strided_hk_defaults                                        8.3 min
+strided_hk_old                                             8.3 min
+strided_hk_place_all                                       8.3 min
+strided_hk_place_inherit                                   8.3 min
+strided_hk_place_dedicated                                 8.3 min
+strided_hk_place_same_core                                 8.3 min
+strided_hk_plan_order_block                                8.3 min
+strided_hk_plan_order_dynamic                              8.3 min
+strided_hk_plan_order_interleaved                          8.3 min
+strided_hk_preload_off                                     8.3 min

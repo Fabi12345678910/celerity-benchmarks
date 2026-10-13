@@ -1,0 +1,19 @@
+# memcpy(4 bytes), 12th Gen Intel(R) Core(TM) i9-12900, ldd (Ubuntu GLIBC 2.39-0ubuntu8.9) 2.39
+0x555555555150 <_Z8copy_onePvPKvm>:	jmp    0x555555555030 <memcpy@plt>
+0x555555555030 <memcpy@plt>:	jmp    QWORD PTR [rip+0x2f92]        # 0x555555557fc8 <memcpy@got.plt>
+0x7ffff7988d80 <__memcpy_avx_unaligned_erms>:	endbr64
+0x7ffff7988d84 <__memcpy_avx_unaligned_erms+4>:	mov    rax,rdi
+0x7ffff7988d87 <__memcpy_avx_unaligned_erms+7>:	cmp    rdx,0x20
+0x7ffff7988d8b <__memcpy_avx_unaligned_erms+11>:	jb     0x7ffff7988db0 <__memcpy_avx_unaligned_erms+48>
+0x7ffff7988db0 <__memcpy_avx_unaligned_erms+48>:	cmp    edx,0x10
+0x7ffff7988db3 <__memcpy_avx_unaligned_erms+51>:	jae    0x7ffff7988de2 <__memcpy_avx_unaligned_erms+98>
+0x7ffff7988db5 <__memcpy_avx_unaligned_erms+53>:	cmp    edx,0x8
+0x7ffff7988db8 <__memcpy_avx_unaligned_erms+56>:	jae    0x7ffff7988e00 <__memcpy_avx_unaligned_erms+128>
+0x7ffff7988dba <__memcpy_avx_unaligned_erms+58>:	cmp    edx,0x4
+0x7ffff7988dbd <__memcpy_avx_unaligned_erms+61>:	jae    0x7ffff7988dd5 <__memcpy_avx_unaligned_erms+85>
+0x7ffff7988dd5 <__memcpy_avx_unaligned_erms+85>:	mov    ecx,DWORD PTR [rsi+rdx*1-0x4]
+0x7ffff7988dd9 <__memcpy_avx_unaligned_erms+89>:	mov    esi,DWORD PTR [rsi]
+0x7ffff7988ddb <__memcpy_avx_unaligned_erms+91>:	mov    DWORD PTR [rdi+rdx*1-0x4],ecx
+0x7ffff7988ddf <__memcpy_avx_unaligned_erms+95>:	mov    DWORD PTR [rdi],esi
+0x7ffff7988de1 <__memcpy_avx_unaligned_erms+97>:	ret
+instructions executed: 17

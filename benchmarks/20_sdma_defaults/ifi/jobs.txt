@@ -1,0 +1,2 @@
+gc20 20_sdma_defaults/ifi/strided_stg_sdma.yaml
+gc22 20_sdma_defaults/ifi/strided_hk_sdma.yaml

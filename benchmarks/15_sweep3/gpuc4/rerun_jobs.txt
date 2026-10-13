@@ -1,0 +1,3 @@
+- 15_sweep3/gpuc4/strided_stg_rerun_r1.yaml 15_sweep3/gpuc4/strided_hk_rerun_r1.yaml 15_sweep3/gpuc4/block_stg_rerun_r1.yaml 15_sweep3/gpuc4/block_hk_rerun_r1.yaml
+- 15_sweep3/gpuc4/strided_stg_rerun_r2.yaml 15_sweep3/gpuc4/strided_hk_rerun_r2.yaml 15_sweep3/gpuc4/block_stg_rerun_r2.yaml 15_sweep3/gpuc4/block_hk_rerun_r2.yaml
+- 15_sweep3/gpuc4/strided_stg_rerun_r3.yaml 15_sweep3/gpuc4/strided_hk_rerun_r3.yaml 15_sweep3/gpuc4/block_stg_rerun_r3.yaml 15_sweep3/gpuc4/block_hk_rerun_r3.yaml

@@ -1,0 +1,43 @@
+# non-temporal pack stores (celerity-bench 014e21a): the sweep's strided base config plus 4 workers
+iterations: 3
+warmup_iterations: 1
+output_csv: 05_fastpath/results/gpuc4_nt.csv
+
+applications:
+  - name: Celerity-acpp
+    command: "hostname; {base} {env} ~/finalizing-work/build/bench-transfer-acpp-bench/strided_transfer {N} {M}"
+    parameters:
+      base: ["COPYLIB_WORKER_CPUS=8,10"]
+      env: ["", "CELERITY_COPYLIB_QUEUES=4 COPYLIB_WORKER_CPUS=8,10,12,14"]
+      N: [4194304, 16777216, 67108864, 268435456]
+      M: [2, 4]
+    metrics:
+      machine: "^(\\S+)"
+      buffer_creation_gbps: "buffer creation:.*?([0-9]+\\.[0-9]+)GB/s"
+      copy_bandwidth: "first access.*?:.*?([0-9]+\\.[0-9]+)GB/s"
+      read_only_gbps: "read only:.*?([0-9]+\\.[0-9]+)GB/s"
+      read_write_gbps: "read write:.*?([0-9]+\\.[0-9]+)GB/s"
+      d2h_gbps: "device to host:.*?([0-9]+\\.[0-9]+)GB/s"
+      check: "Check: (\\w+)"
+      full_data_size_gib: "Data Size:\\s*([0-9.]+)\\s*GiB"
+      data_size_gib: "Worked on Data Size:\\s*([0-9.]+)\\s*GiB"
+    static: {celerity: "3dcopylib-bench 014e21a"}
+
+  - name: Celerity-dpcpp
+    command: "hostname; . ~/finalizing-work/install/dpcpp-nightly-2026-03-26/env.sh && {base} {env} ~/finalizing-work/build/bench-transfer-dpcpp0326-bench/strided_transfer {N} {M}"
+    parameters:
+      base: ["COPYLIB_WORKER_CPUS=8,10"]
+      env: ["", "CELERITY_COPYLIB_QUEUES=4 COPYLIB_WORKER_CPUS=8,10,12,14"]
+      N: [4194304, 16777216, 67108864, 268435456]
+      M: [2, 4]
+    metrics:
+      machine: "^(\\S+)"
+      buffer_creation_gbps: "buffer creation:.*?([0-9]+\\.[0-9]+)GB/s"
+      copy_bandwidth: "first access.*?:.*?([0-9]+\\.[0-9]+)GB/s"
+      read_only_gbps: "read only:.*?([0-9]+\\.[0-9]+)GB/s"
+      read_write_gbps: "read write:.*?([0-9]+\\.[0-9]+)GB/s"
+      d2h_gbps: "device to host:.*?([0-9]+\\.[0-9]+)GB/s"
+      check: "Check: (\\w+)"
+      full_data_size_gib: "Data Size:\\s*([0-9.]+)\\s*GiB"
+      data_size_gib: "Worked on Data Size:\\s*([0-9.]+)\\s*GiB"
+    static: {celerity: "3dcopylib-bench 014e21a"}

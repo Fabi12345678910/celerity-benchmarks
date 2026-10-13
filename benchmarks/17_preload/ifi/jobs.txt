@@ -1,0 +1,2 @@
+gc20 17_preload/ifi/preload_gc20.yaml
+gc22 17_preload/ifi/preload_gc22.yaml

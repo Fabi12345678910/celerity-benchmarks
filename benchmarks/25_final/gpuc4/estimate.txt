@@ -1,0 +1,16 @@
+gpuc4: 279 YAMLs in 15 jobs, about 1220 min (20.3 h) in total
+job 1: 22 yamls, 80 min: sweep_strided_native .. sweep_strided_hk_anchor_j01
+job 2: 28 yamls, 79 min: sweep_strided_stg_queues_24 .. sweep_strided_hk_anchor_j02
+job 3: 21 yamls, 77 min: sweep_strided_stg_grid_q4_c4MiB .. sweep_strided_hk_anchor_j03
+job 4: 15 yamls, 78 min: sweep_strided_hk_min_bytes_4KiB .. sweep_strided_hk_anchor_j04
+job 5: 15 yamls, 82 min: sweep_strided_hk_queues_64 .. sweep_strided_hk_anchor_j05
+job 6: 15 yamls, 79 min: sweep_strided_hk_chunk_512KiB .. sweep_strided_hk_anchor_j06
+job 7: 15 yamls, 77 min: sweep_strided_hk_grid_q2_c8MiB .. sweep_strided_hk_anchor_j07
+job 8: 16 yamls, 82 min: sweep_strided_hk_max_elem_size_2 .. sweep_strided_hk_anchor_j08
+job 9: 32 yamls, 82 min: sweep_strided_hk_wg_size_4 .. sweep_block_hk_anchor_j09
+job 10: 45 yamls, 78 min: sweep_block_stg_queues_24 .. sweep_block_hk_anchor_j10
+job 11: 45 yamls, 78 min: sweep_block_hk_queues_64 .. sweep_block_hk_anchor_j11
+job 12: 3 yamls, 85 min: prog_sparse .. prog_both
+job 13: 2 yamls, 75 min: prog_both_native .. prog_rows
+job 14: 3 yamls, 96 min: prog_rows_native .. prog_device_native
+job 15: 2 yamls, 90 min: pair_preload .. pair_sdma

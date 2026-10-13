@@ -1,0 +1,30 @@
+gpuc4: 236 configurations + anchors, 14 jobs of at most 105 min, 1079 min in total (strided 819, block 260)
+job 1: 18 configs, 80 min: strided_stg_base .. strided_hk_anchor_j01
+job 2: 20 configs, 80 min: strided_stg_min_bytes_256KiB .. strided_stg_anchor_j02
+job 3: 20 configs, 80 min: strided_stg_staging_bytes_1GiB .. strided_stg_anchor_j03
+job 4: 15 configs, 81 min: strided_stg_plan_order_dynamic .. strided_hk_anchor_j04
+job 5: 11 configs, 81 min: strided_hk_queues_2 .. strided_hk_anchor_j05
+job 6: 10 configs, 73 min: strided_hk_staging_bytes_64KiB .. strided_hk_anchor_j06
+job 7: 10 configs, 74 min: strided_hk_staging_bytes_1GiB .. strided_hk_anchor_j07
+job 8: 10 configs, 76 min: strided_hk_grid_q2_c1MiB .. strided_hk_anchor_j08
+job 9: 11 configs, 77 min: strided_hk_plan_order_dynamic .. strided_hk_anchor_j09
+job 10: 11 configs, 77 min: strided_hk_elems_per_item_2 .. strided_hk_anchor_j10
+job 11: 26 configs, 82 min: strided_hk_wg_size_16 .. block_hk_anchor_j11
+job 12: 34 configs, 79 min: block_stg_min_bytes_256KiB .. block_hk_anchor_j12
+job 13: 33 configs, 79 min: block_hk_min_bytes_4KiB .. block_hk_anchor_j13
+job 14: 26 configs, 59 min: block_hk_wait_poll .. block_hk_anchor_j14
+strided_hk_staging_bytes_1GiB                             12.3 min
+strided_hk_staging_bytes_512MiB                            9.9 min
+strided_hk_queues_64                                       8.9 min
+strided_stg_staging_bytes_1GiB                             8.6 min
+strided_hk_queues_32                                       8.4 min
+strided_hk_queues_24                                       8.3 min
+strided_hk_grid_q2_c1MiB                                   8.3 min
+strided_hk_grid_q2_c4MiB                                   8.3 min
+strided_hk_grid_q2_c16MiB                                  8.3 min
+strided_hk_grid_q4_c4MiB                                   8.3 min
+strided_hk_grid_q4_c16MiB                                  8.3 min
+strided_hk_grid_q8_c1MiB                                   8.3 min
+strided_hk_grid_q8_c4MiB                                   8.3 min
+strided_hk_grid_q8_c16MiB                                  8.3 min
+strided_hk_queues_16                                       8.1 min

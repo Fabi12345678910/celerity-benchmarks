@@ -1,0 +1,23 @@
+# the same, N 2^24..2^28 (the first run stopped at 2^23 because the native path is slow on AMD; on the CUDA backend it is not)
+iterations: 3
+warmup_iterations: 1
+output_csv: 18_ifi_nvidia/results/strided_native_copylib_off_large.csv
+
+applications:
+  - name: Celerity-acpp
+    command: "hostname; {env} ~/finalizing-work/build/bench-transfer-acpp-cuda-bench/strided_transfer {N} {M}"
+    parameters:
+      N: [16777216, 33554432, 67108864, 134217728, 268435456]
+      M: [1, 2]
+      env: ["CELERITY_COPYLIB=off"]
+    metrics:
+      machine: "^(\\S+)"
+      buffer_creation_gbps: "buffer creation:.*?([0-9]+\\.[0-9]+)GB/s"
+      copy_bandwidth: "first access.*?:.*?([0-9]+\\.[0-9]+)GB/s"
+      read_only_gbps: "read only:.*?([0-9]+\\.[0-9]+)GB/s"
+      read_write_gbps: "read write:.*?([0-9]+\\.[0-9]+)GB/s"
+      d2h_gbps: "device to host:.*?([0-9]+\\.[0-9]+)GB/s"
+      check: "Check: (\\w+)"
+      full_data_size_gib: "Data Size:\\s*([0-9.]+)\\s*GiB"
+      data_size_gib: "Worked on Data Size:\\s*([0-9.]+)\\s*GiB"
+    static: {celerity: "3dcopylib-bench 2dda28f", program: "strided_transfer", variant: "native", config: "strided_native_copylib_off_large", gpu: "RTX 2070"}

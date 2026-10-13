@@ -1,0 +1,30 @@
+==> slurm-fw-bench-22543821.log <==
+
+Done. Results written to 14_verify/results/lumi_transfer_acpp.csv
+EXIT=0  end: Mon Oct  5 09:39:26 EEST 2026
+
+==> slurm-fw-bench-22543822.log <==
+
+Done. Results written to 14_verify/results/lumi_rows_acpp.csv
+EXIT=0  end: Mon Oct  5 09:41:40 EEST 2026
+
+==> slurm-fw-bench-22543823.log <==
+
+Done. Results written to 14_verify/results/lumi_both_acpp.csv
+EXIT=0  end: Mon Oct  5 09:35:46 EEST 2026
+
+==> slurm-fw-bench-22543825.log <==
+
+Done. Results written to 14_verify/results/lumi_transfer_dpcpp0326.csv
+EXIT=0  end: Mon Oct  5 09:39:38 EEST 2026
+
+==> slurm-fw-bench-22543826.log <==
+
+Done. Results written to 14_verify/results/lumi_rows_dpcpp0326.csv
+EXIT=0  end: Mon Oct  5 09:42:25 EEST 2026
+
+==> slurm-fw-bench-22543827.log <==
+
+Done. Results written to 14_verify/results/lumi_both_dpcpp0326.csv
+EXIT=0  end: Mon Oct  5 09:34:56 EEST 2026
+project_XXXXXXXXX   |              0/1000   (0.0%) core/hours|       164/18000   (0.9%) gpu/hours|          1/90000   (0.0%) TB/hours

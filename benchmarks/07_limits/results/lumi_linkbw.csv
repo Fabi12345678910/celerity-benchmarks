@@ -1,0 +1,325 @@
+iteration,application,command,runtime_sec,gbps,load_gbps,machine,env,mib,test
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.5063426760025322,21.278,,nid005998,,1,dma_h2d
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.5075815669260919,23.940,,nid005998,,4,dma_h2d
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.516864201053977,25.013,,nid005998,,16,dma_h2d
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.5507279620505869,25.377,,nid005998,,64,dma_h2d
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.6713620899245143,25.479,,nid005998,,256,dma_h2d
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,1.151951676234603,25.500,,nid005998,,1024,dma_h2d
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.5164581099525094,21.072,,nid005998,,1,dma_d2h
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.5199457895942032,23.637,,nid005998,,4,dma_d2h
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.524755674879998,24.736,,nid005998,,16,dma_d2h
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.5627551977522671,25.075,,nid005998,,64,dma_d2h
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.6838063388131559,25.153,,nid005998,,256,dma_d2h
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,1.176377261057496,25.173,,nid005998,,1024,dma_d2h
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.5161743881180882,23.831,,nid005998,,1,dma_bidir
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.5198497232049704,27.681,,nid005998,,4,dma_bidir
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.5373779097571969,28.815,,nid005998,,16,dma_bidir
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.5975769339129329,29.192,,nid005998,,64,dma_bidir
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.8270736732520163,29.275,,nid005998,,256,dma_bidir
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,1.735533352009952,29.295,,nid005998,,1024,dma_bidir
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.4971628529019654,21.487,,nid005998,,1,kernel_read
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.5001134183257818,24.317,,nid005998,,4,kernel_read
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.5046163941733539,25.176,,nid005998,,16,kernel_read
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.5388195267878473,25.400,,nid005998,,64,kernel_read
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.6595755419693887,25.488,,nid005998,,256,kernel_read
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,1.1439629620872438,25.503,,nid005998,,1024,kernel_read
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.49664564710110426,21.005,,nid005998,,1,kernel_write
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.4999927720054984,23.831,,nid005998,,4,kernel_write
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.5047807139344513,25.145,,nid005998,,16,kernel_write
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.5347083620727062,25.665,,nid005998,,64,kernel_write
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.6552397310733795,25.807,,nid005998,,256,kernel_write
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,1.1437323028221726,25.952,,nid005998,,1024,kernel_write
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.4966937187127769,11.640,,nid005998,,1,kernel_read_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.5002320175990462,12.424,,nid005998,,4,kernel_read_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.5176437878981233,12.649,,nid005998,,16,kernel_read_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.5775364157743752,12.728,,nid005998,,64,kernel_read_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.8225706168450415,12.696,,nid005998,,256,kernel_read_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,1.7809612480923533,12.733,,nid005998,,1024,kernel_read_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.5006265160627663,6.057,,nid005998,,1,kernel_read_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.5087673459202051,6.298,,nid005998,,4,kernel_read_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.5346745359711349,6.353,,nid005998,,16,kernel_read_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.6596236769109964,6.372,,nid005998,,64,kernel_read_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,1.1406786870211363,6.377,,nid005998,,256,kernel_read_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,3.050029043108225,6.378,,nid005998,,1024,kernel_read_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.4976944080553949,8.171,,nid005998,,1,kernel_write_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.5042007151059806,8.703,,nid005998,,4,kernel_write_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.5211026123724878,8.820,,nid005998,,16,kernel_write_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,0.5935818962752819,8.907,,nid005998,,64,kernel_write_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,0.8744800519198179,8.931,,nid005998,,256,kernel_write_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,1.9959283280186355,8.902,,nid005998,,1024,kernel_write_s2
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.506038153078407,4.223,,nid005998,,1,kernel_write_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.5087068979628384,4.385,,nid005998,,4,kernel_write_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.5464167478494346,4.437,,nid005998,,16,kernel_write_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,0.6875191968865693,4.459,,nid005998,,64,kernel_write_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,1.2523421519435942,4.460,,nid005998,,256,kernel_write_s4
+1,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,3.4778078380040824,4.442,,nid005998,,1024,kernel_write_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.4981466173194349,19.051,,nid005998,HSA_ENABLE_SDMA=0,1,dma_h2d
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.5041019730269909,23.364,,nid005998,HSA_ENABLE_SDMA=0,4,dma_h2d
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.5127151720225811,24.865,,nid005998,HSA_ENABLE_SDMA=0,16,dma_h2d
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.5388046479783952,25.317,,nid005998,HSA_ENABLE_SDMA=0,64,dma_h2d
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.6593664460815489,25.463,,nid005998,HSA_ENABLE_SDMA=0,256,dma_h2d
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,1.1396879786625504,25.466,,nid005998,HSA_ENABLE_SDMA=0,1024,dma_h2d
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.49701466504484415,19.563,,nid005998,HSA_ENABLE_SDMA=0,1,dma_d2h
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.5000407658517361,24.476,,nid005998,HSA_ENABLE_SDMA=0,4,dma_d2h
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.5045466292649508,25.974,,nid005998,HSA_ENABLE_SDMA=0,16,dma_d2h
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.5389651488512754,26.326,,nid005998,HSA_ENABLE_SDMA=0,64,dma_d2h
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.6588676036335528,26.435,,nid005998,HSA_ENABLE_SDMA=0,256,dma_d2h
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,1.1283725490793586,26.778,,nid005998,HSA_ENABLE_SDMA=0,1024,dma_d2h
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.5003941231407225,19.980,,nid005998,HSA_ENABLE_SDMA=0,1,dma_bidir
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.504342139698565,24.272,,nid005998,HSA_ENABLE_SDMA=0,4,dma_bidir
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.5173325827345252,25.500,,nid005998,HSA_ENABLE_SDMA=0,16,dma_bidir
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.5817235880531371,25.839,,nid005998,HSA_ENABLE_SDMA=0,64,dma_bidir
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.8220381303690374,26.030,,nid005998,HSA_ENABLE_SDMA=0,256,dma_bidir
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,1.7643557479605079,25.922,,nid005998,HSA_ENABLE_SDMA=0,1024,dma_bidir
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.4976921030320227,21.417,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_read
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.5039105908945203,24.317,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_read
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.5087496712803841,25.188,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_read
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.5427051018923521,25.404,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_read
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.6598675809800625,25.492,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_read
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,1.1434169788844883,25.501,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_read
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.5002945302985609,20.609,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_write
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.500230064149946,23.809,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_write
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.5044804411008954,25.109,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_write
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.5469236141070724,25.639,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_write
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.6597412270493805,25.787,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_write
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,1.1370181827805936,25.937,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_write
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.49943959480151534,11.558,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_read_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.5041368398815393,12.436,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_read_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.5217005019076169,12.667,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_read_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.5812961398623884,12.728,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_read_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.8222639840096235,12.717,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_read_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,1.775611194781959,12.734,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_read_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.4984154007397592,6.051,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_read_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.5086118914186954,6.288,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_read_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.538968157954514,6.349,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_read_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.6631454098969698,6.372,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_read_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,1.135854466818273,6.377,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_read_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,3.047525737900287,6.377,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_read_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.5008868430741131,8.141,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_write_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.5042242300696671,8.709,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_write_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.521415825933218,8.856,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_write_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,0.5936999972909689,8.908,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_write_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,0.8784943106584251,8.934,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_write_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,1.992437613196671,8.904,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_write_s2
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.5049936366267502,4.245,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_write_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.5086211189627647,4.398,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_write_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.5468575563281775,4.436,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_write_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,0.6916717626154423,4.459,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_write_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,1.2559590712189674,4.460,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_write_s4
+1,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,3.4786697579547763,4.443,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_write_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.5056589129380882,21.347,,nid005998,,1,dma_h2d
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.5080042583867908,23.918,,nid005998,,4,dma_h2d
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.5169041543267667,25.055,,nid005998,,16,dma_h2d
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.5506157022900879,25.403,,nid005998,,64,dma_h2d
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.6709310468286276,25.480,,nid005998,,256,dma_h2d
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,1.15299830166623,25.499,,nid005998,,1024,dma_h2d
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.5197410560213029,20.739,,nid005998,,1,dma_d2h
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.5160457938909531,23.595,,nid005998,,4,dma_d2h
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.5248027010820806,24.736,,nid005998,,16,dma_d2h
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.5587509088218212,25.076,,nid005998,,64,dma_d2h
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.6796333082020283,25.153,,nid005998,,256,dma_d2h
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,1.1674205888994038,25.172,,nid005998,,1024,dma_d2h
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.5168807790614665,24.050,,nid005998,,1,dma_bidir
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.51977982185781,27.858,,nid005998,,4,dma_bidir
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.5337863890454173,28.910,,nid005998,,16,dma_bidir
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.593457895796746,29.163,,nid005998,,64,dma_bidir
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.8256843122653663,29.267,,nid005998,,256,dma_bidir
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,1.7343423049896955,29.287,,nid005998,,1024,dma_bidir
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.49994716327637434,21.487,,nid005998,,1,kernel_read
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.49855279875919223,24.295,,nid005998,,4,kernel_read
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.5086465091444552,25.157,,nid005998,,16,kernel_read
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.5348122171126306,25.398,,nid005998,,64,kernel_read
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.6638795281760395,25.490,,nid005998,,256,kernel_read
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,1.1402249550446868,25.508,,nid005998,,1024,kernel_read
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.49603688111528754,20.871,,nid005998,,1,kernel_write
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.5000665448606014,23.853,,nid005998,,4,kernel_write
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.5041589927859604,25.073,,nid005998,,16,kernel_write
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.5389193729497492,25.661,,nid005998,,64,kernel_write
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.6595182777382433,25.808,,nid005998,,256,kernel_write
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,1.1370283518917859,25.954,,nid005998,,1024,kernel_write
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.49939383612945676,11.579,,nid005998,,1,kernel_read_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.5002533900551498,12.430,,nid005998,,4,kernel_read_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.5175163359381258,12.650,,nid005998,,16,kernel_read_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.5817376999184489,12.729,,nid005998,,64,kernel_read_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.822776201646775,12.737,,nid005998,,256,kernel_read_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,1.7794565707445145,12.727,,nid005998,,1024,kernel_read_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.49797537364065647,6.068,,nid005998,,1,kernel_read_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.5086381328292191,6.295,,nid005998,,4,kernel_read_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.5387665759772062,6.351,,nid005998,,16,kernel_read_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.6634718952700496,6.373,,nid005998,,64,kernel_read_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,1.1488108900375664,6.377,,nid005998,,256,kernel_read_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,3.041442555375397,6.377,,nid005998,,1024,kernel_read_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.4977173819206655,8.202,,nid005998,,1,kernel_write_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.5042278170585632,8.680,,nid005998,,4,kernel_write_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.5215028570964932,8.857,,nid005998,,16,kernel_write_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,0.5936565320007503,8.911,,nid005998,,64,kernel_write_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,0.879440092947334,8.932,,nid005998,,256,kernel_write_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,1.9958015908487141,8.900,,nid005998,,1024,kernel_write_s2
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.5011314288713038,4.258,,nid005998,,1,kernel_write_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.5047045447863638,4.384,,nid005998,,4,kernel_write_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.5505697731859982,4.443,,nid005998,,16,kernel_write_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,0.6874560159631073,4.461,,nid005998,,64,kernel_write_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,1.2566096070222557,4.458,,nid005998,,256,kernel_write_s4
+2,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,3.4875627909787,4.444,,nid005998,,1024,kernel_write_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.496274228207767,19.218,,nid005998,HSA_ENABLE_SDMA=0,1,dma_h2d
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.5005576168186963,23.322,,nid005998,HSA_ENABLE_SDMA=0,4,dma_h2d
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.5083055603317916,24.901,,nid005998,HSA_ENABLE_SDMA=0,16,dma_h2d
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.5386426290497184,25.329,,nid005998,HSA_ENABLE_SDMA=0,64,dma_h2d
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.6592019102536142,25.457,,nid005998,HSA_ENABLE_SDMA=0,256,dma_h2d
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,1.1397510040551424,25.486,,nid005998,HSA_ENABLE_SDMA=0,1024,dma_h2d
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.5043370248749852,19.332,,nid005998,HSA_ENABLE_SDMA=0,1,dma_d2h
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.5004373528063297,24.431,,nid005998,HSA_ENABLE_SDMA=0,4,dma_d2h
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.5086141107603908,26.000,,nid005998,HSA_ENABLE_SDMA=0,16,dma_d2h
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.535149147734046,26.439,,nid005998,HSA_ENABLE_SDMA=0,64,dma_d2h
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.6593735739588737,26.414,,nid005998,HSA_ENABLE_SDMA=0,256,dma_d2h
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,1.1405228059738874,26.401,,nid005998,HSA_ENABLE_SDMA=0,1024,dma_d2h
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.4998347503133118,20.480,,nid005998,HSA_ENABLE_SDMA=0,1,dma_bidir
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.5002109720371664,24.028,,nid005998,HSA_ENABLE_SDMA=0,4,dma_bidir
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.5175668089650571,25.553,,nid005998,HSA_ENABLE_SDMA=0,16,dma_bidir
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.5813427749089897,25.857,,nid005998,HSA_ENABLE_SDMA=0,64,dma_bidir
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.8274053810164332,26.049,,nid005998,HSA_ENABLE_SDMA=0,256,dma_bidir
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,1.7697467161342502,26.050,,nid005998,HSA_ENABLE_SDMA=0,1024,dma_bidir
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.4991320911794901,21.417,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_read
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.4999656742438674,24.295,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_read
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.5089591527357697,25.127,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_read
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.5345221669413149,25.421,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_read
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.6592966127209365,25.490,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_read
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,1.1509439940564334,25.509,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_read
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.493337020277977,20.739,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_write
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.500024919398129,23.831,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_write
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.5087886000983417,25.061,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_write
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.5386983370408416,25.669,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_write
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.6593779120594263,25.803,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_write
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,1.1401402917690575,25.963,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_write
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.49669121904298663,11.640,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_read_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.5001979656517506,12.424,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_read_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.5172847411595285,12.675,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_read_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.5777964130975306,12.729,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_read_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.8228592108935118,12.724,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_read_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,1.7792521812953055,12.737,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_read_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.5017236969433725,6.068,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_read_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.504686594940722,6.295,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_read_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.5348781999200583,6.351,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_read_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.6632511029019952,6.373,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_read_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,1.1399713628925383,6.377,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_read_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,3.0420927312225103,6.379,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_read_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.49843756994232535,8.161,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_write_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.5003235409967601,8.695,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_write_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.517409672960639,8.861,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_write_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,0.5936713963747025,8.912,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_write_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,0.8751874212175608,8.933,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_write_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,2.006485580932349,8.900,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_write_s2
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.4984752722084522,4.242,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_write_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.5086031598038971,4.389,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_write_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.5466078347526491,4.445,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_write_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,0.683554498013109,4.460,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_write_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,1.2477049250155687,4.457,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_write_s4
+2,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,3.481576221063733,4.444,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_write_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.5029320390895009,20.739,,nid005998,,1,dma_h2d
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.5080227791331708,24.005,,nid005998,,4,dma_h2d
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.5126140066422522,25.091,,nid005998,,16,dma_h2d
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.546562407631427,25.406,,nid005998,,64,dma_h2d
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.6675079488195479,25.481,,nid005998,,256,dma_h2d
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,1.1519717653281987,25.500,,nid005998,,1024,dma_h2d
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.5209340243600309,20.805,,nid005998,,1,dma_d2h
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.5159693099558353,23.637,,nid005998,,4,dma_d2h
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.5247024209238589,24.771,,nid005998,,16,dma_d2h
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.5588001310825348,25.070,,nid005998,,64,dma_d2h
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.6790602179244161,25.153,,nid005998,,256,dma_d2h
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,1.1638449486345053,25.172,,nid005998,,1024,dma_d2h
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.5169762503355742,24.453,,nid005998,,1,dma_bidir
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.520100262016058,27.799,,nid005998,,4,dma_bidir
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.5333337537012994,28.850,,nid005998,,16,dma_bidir
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.5934813767671585,29.183,,nid005998,,64,dma_bidir
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.8260294026695192,29.269,,nid005998,,256,dma_bidir
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,1.7401717607863247,29.296,,nid005998,,1024,dma_bidir
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.4980664369650185,21.701,,nid005998,,1,kernel_read
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.5000302302651107,24.295,,nid005998,,4,kernel_read
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.5089159389026463,25.188,,nid005998,,16,kernel_read
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.5386776668019593,25.400,,nid005998,,64,kernel_read
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.6674175132066011,25.488,,nid005998,,256,kernel_read
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,1.1432107291184366,25.504,,nid005998,,1024,kernel_read
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.4968778332695365,20.805,,nid005998,,1,kernel_write
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.5001501142978668,23.853,,nid005998,,4,kernel_write
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.5046630781143904,25.073,,nid005998,,16,kernel_write
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.538545579649508,25.670,,nid005998,,64,kernel_write
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.6553681138902903,25.823,,nid005998,,256,kernel_write
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,1.1322024147957563,25.959,,nid005998,,1024,kernel_write
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.49663213128224015,11.599,,nid005998,,1,kernel_read_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.5043121529743075,12.453,,nid005998,,4,kernel_read_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.5177323878742754,12.670,,nid005998,,16,kernel_read_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.5813223542645574,12.729,,nid005998,,64,kernel_read_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.8220174727030098,12.732,,nid005998,,256,kernel_read_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,1.7871033698320389,12.744,,nid005998,,1024,kernel_read_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.5031161135993898,6.085,,nid005998,,1,kernel_read_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.504602889996022,6.289,,nid005998,,4,kernel_read_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.542859255336225,6.352,,nid005998,,16,kernel_read_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.6628465838730335,6.373,,nid005998,,64,kernel_read_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,1.1441933079622686,6.376,,nid005998,,256,kernel_read_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,3.038030765019357,6.379,,nid005998,,1024,kernel_read_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.494476234074682,8.182,,nid005998,,1,kernel_write_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.5041257697157562,8.706,,nid005998,,4,kernel_write_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.5215940861962736,8.860,,nid005998,,16,kernel_write_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,0.593562331981957,8.914,,nid005998,,64,kernel_write_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,0.878365620970726,8.933,,nid005998,,256,kernel_write_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,2.010818342678249,8.900,,nid005998,,1024,kernel_write_s2
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.4987875767983496,4.244,,nid005998,,1,kernel_write_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.5250514270737767,4.393,,nid005998,,4,kernel_write_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.5467957393266261,4.439,,nid005998,,16,kernel_write_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,0.6914837029762566,4.459,,nid005998,,64,kernel_write_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,1.2621638821437955,4.458,,nid005998,,256,kernel_write_s4
+3,linkbw,hostname;  ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,3.5051675252616405,4.449,,nid005998,,1024,kernel_write_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.500855172984302,19.051,,nid005998,HSA_ENABLE_SDMA=0,1,dma_h2d
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.5079340320080519,23.281,,nid005998,HSA_ENABLE_SDMA=0,4,dma_h2d
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.5171812870539725,24.871,,nid005998,HSA_ENABLE_SDMA=0,16,dma_h2d
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.5422773733735085,25.335,,nid005998,HSA_ENABLE_SDMA=0,64,dma_h2d
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.6675181980244815,25.447,,nid005998,HSA_ENABLE_SDMA=0,256,dma_h2d
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,1.1518221497535706,25.487,,nid005998,HSA_ENABLE_SDMA=0,1024,dma_h2d
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.500529358163476,19.739,,nid005998,HSA_ENABLE_SDMA=0,1,dma_d2h
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.5040001845918596,24.272,,nid005998,HSA_ENABLE_SDMA=0,4,dma_d2h
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.5128957931883633,25.808,,nid005998,HSA_ENABLE_SDMA=0,16,dma_d2h
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.5426224041730165,26.414,,nid005998,HSA_ENABLE_SDMA=0,64,dma_d2h
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.6674505760893226,26.394,,nid005998,HSA_ENABLE_SDMA=0,256,dma_d2h
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,1.1442316216416657,26.436,,nid005998,HSA_ENABLE_SDMA=0,1024,dma_d2h
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.505043026059866,20.384,,nid005998,HSA_ENABLE_SDMA=0,1,dma_bidir
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.5030074627138674,24.295,,nid005998,HSA_ENABLE_SDMA=0,4,dma_bidir
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.5176579337567091,25.494,,nid005998,HSA_ENABLE_SDMA=0,16,dma_bidir
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.6214669570326805,25.820,,nid005998,HSA_ENABLE_SDMA=0,64,dma_bidir
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.830366316717118,26.027,,nid005998,HSA_ENABLE_SDMA=0,256,dma_bidir
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,1.7755077360197902,26.053,,nid005998,HSA_ENABLE_SDMA=0,1024,dma_bidir
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.50226861378178,21.347,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_read
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.4998063906095922,24.295,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_read
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.5089007960632443,25.151,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_read
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.534823149908334,25.398,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_read
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.6634079357609153,25.489,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_read
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,1.1439151861704886,25.500,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_read
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.49647038616240025,20.739,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_write
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.496065778657794,23.831,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_write
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.5051169488579035,25.067,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_write
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.5382940173149109,25.626,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_write
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.6632304419763386,25.781,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_write
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,1.1369687225669622,25.932,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_write
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.49973994214087725,11.620,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_read_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.5004443726502359,12.436,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_read_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.5173235731199384,12.659,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_read_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.5776698128320277,12.729,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_read_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.8259815610945225,12.741,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_read_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,1.7822214253246784,12.736,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_read_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.49989811005070806,6.074,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_read_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.5168239800259471,6.283,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_read_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.5386605323292315,6.352,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_read_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.6632535150274634,6.372,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_read_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,1.1411383412778378,6.377,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_read_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,3.062919557094574,6.377,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_read_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.5002608262002468,8.121,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_write_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.5042161960154772,8.686,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_write_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.5214939522556961,8.861,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_write_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,0.5936016379855573,8.911,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_write_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,0.8783990871161222,8.933,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_write_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,2.0116068269126117,8.901,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_write_s2
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.4981753961183131,4.250,,nid005998,HSA_ENABLE_SDMA=0,1,kernel_write_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.5085364067927003,4.399,,nid005998,HSA_ENABLE_SDMA=0,4,kernel_write_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.5466581899672747,4.438,,nid005998,HSA_ENABLE_SDMA=0,16,kernel_write_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,0.683502797037363,4.459,,nid005998,HSA_ENABLE_SDMA=0,64,kernel_write_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,1.2523440127260983,4.459,,nid005998,HSA_ENABLE_SDMA=0,256,kernel_write_s4
+3,linkbw,hostname; HSA_ENABLE_SDMA=0 ROCR_VISIBLE_DEVICES=4 taskset -c 1 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,3.486275391187519,4.443,,nid005998,HSA_ENABLE_SDMA=0,1024,kernel_write_s4

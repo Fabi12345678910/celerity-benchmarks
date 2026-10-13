@@ -1,0 +1,3 @@
+- 15_sweep3/lumi/strided_stg_rerun_r1.yaml 15_sweep3/lumi/strided_hk_rerun_r1.yaml 15_sweep3/lumi/block_stg_rerun_r1.yaml 15_sweep3/lumi/block_hk_rerun_r1.yaml
+- 15_sweep3/lumi/strided_stg_rerun_r2.yaml 15_sweep3/lumi/strided_hk_rerun_r2.yaml 15_sweep3/lumi/block_stg_rerun_r2.yaml 15_sweep3/lumi/block_hk_rerun_r2.yaml
+- 15_sweep3/lumi/strided_stg_rerun_r3.yaml 15_sweep3/lumi/strided_hk_rerun_r3.yaml 15_sweep3/lumi/block_stg_rerun_r3.yaml 15_sweep3/lumi/block_hk_rerun_r3.yaml

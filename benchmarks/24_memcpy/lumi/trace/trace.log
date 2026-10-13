@@ -1,0 +1,192 @@
+=== hip_65536_pinned_sdma0 16:19:40
+H2D: 37.81 us median, 35.50 us min, 1.733 GB/s, stream 20.01 us/copy, submit 10.69 us/copy
+D2H: 31.71 us median, 30.74 us min, 2.067 GB/s, stream 18.00 us/copy, submit 10.92 us/copy
+Check: ok
+=== hip_65536_pageable_sdma0 16:19:42
+H2D: 41.98 us median, 40.54 us min, 1.561 GB/s, stream 23.70 us/copy, submit 18.36 us/copy
+D2H: 72.68 us median, 65.04 us min, 0.902 GB/s, stream 75.45 us/copy, submit 75.12 us/copy
+Check: ok
+=== opencl_65536_pinned_sdma0 16:19:43
+H2D: 38.21 us median, 36.60 us min, 1.715 GB/s, stream 27.88 us/copy, submit 1.03 us/copy
+D2H: 36.34 us median, 34.17 us min, 1.803 GB/s, stream 28.14 us/copy, submit 0.68 us/copy
+Check: ok
+=== opencl_65536_pageable_sdma0 16:19:47
+H2D: 43.85 us median, 43.20 us min, 1.494 GB/s, stream 30.63 us/copy, submit 0.95 us/copy
+D2H: 49.66 us median, 44.75 us min, 1.320 GB/s, stream 37.63 us/copy, submit 1.04 us/copy
+Check: ok
+=== acpp_65536_pinned_sdma0 16:19:48
+H2D: 45.86 us median, 39.70 us min, 1.429 GB/s, stream 26.64 us/copy, submit 23.26 us/copy
+D2H: 46.13 us median, 40.17 us min, 1.421 GB/s, stream 27.29 us/copy, submit 23.56 us/copy
+Check: ok
+=== acpp_65536_pageable_sdma0 16:19:49
+H2D: 54.29 us median, 48.51 us min, 1.207 GB/s, stream 33.65 us/copy, submit 29.86 us/copy
+D2H: 103.99 us median, 96.77 us min, 0.630 GB/s, stream 79.15 us/copy, submit 76.52 us/copy
+Check: ok
+=== dpcpp_65536_pinned_sdma0 16:19:50
+H2D: 48.15 us median, 46.07 us min, 1.361 GB/s, stream 32.39 us/copy, submit 25.04 us/copy
+D2H: 53.31 us median, 48.99 us min, 1.229 GB/s, stream 27.70 us/copy, submit 22.23 us/copy
+Check: ok
+=== dpcpp_65536_pageable_sdma0 16:19:51
+H2D: 52.50 us median, 47.98 us min, 1.248 GB/s, stream 34.86 us/copy, submit 30.51 us/copy
+D2H: 97.25 us median, 95.28 us min, 0.674 GB/s, stream 73.12 us/copy, submit 70.54 us/copy
+Check: ok
+=== celerity_acpp_65536_celerity_sdma0 16:19:52
+H2D: 56.51 us median, 40.66 us min, 1.160 GB/s, stream -841.73 us/copy, submit 3.41 us/copy
+D2H: 83.63 us median, 69.65 us min, 0.784 GB/s, stream 48.47 us/copy, submit 1.19 us/copy
+H2D tasks: 118.84 us median, 96.36 us min, 0.551 GB/s, stream 65.90 us/copy, submit 7.86 us/copy
+H2D base: 62.33 us median, 55.70 us min, 1.051 GB/s, stream 907.63 us/copy, submit 4.45 us/copy
+D2H tasks: 132.88 us median, 117.53 us min, 0.493 GB/s, stream 77.15 us/copy, submit 4.91 us/copy
+D2H base: 49.25 us median, 47.88 us min, 1.331 GB/s, stream 28.68 us/copy, submit 3.71 us/copy
+Check: ok
+=== celerity_dpcpp0326_65536_celerity_sdma0 16:19:54
+H2D: 60.68 us median, 65.34 us min, 1.080 GB/s, stream -2078.12 us/copy, submit 5.92 us/copy
+D2H: 95.37 us median, 64.57 us min, 0.687 GB/s, stream 41.24 us/copy, submit 0.33 us/copy
+H2D tasks: 140.73 us median, 133.31 us min, 0.466 GB/s, stream 78.73 us/copy, submit 8.81 us/copy
+H2D base: 80.06 us median, 67.97 us min, 0.819 GB/s, stream 2156.86 us/copy, submit 2.89 us/copy
+D2H tasks: 159.36 us median, 125.60 us min, 0.411 GB/s, stream 80.91 us/copy, submit 3.51 us/copy
+D2H base: 63.99 us median, 61.04 us min, 1.024 GB/s, stream 39.66 us/copy, submit 3.19 us/copy
+Check: ok
+=== hip_67108864_pinned_sdma0 16:19:56
+H2D: 2665.38 us median, 2661.81 us min, 25.178 GB/s, stream 2684.60 us/copy, submit 11.17 us/copy
+D2H: 2558.33 us median, 2550.95 us min, 26.232 GB/s, stream 2584.81 us/copy, submit 11.47 us/copy
+Check: ok
+=== hip_67108864_pageable_sdma0 16:19:57
+H2D: 2722.33 us median, 2720.45 us min, 24.651 GB/s, stream 2749.64 us/copy, submit 2749.04 us/copy
+D2H: 2684.67 us median, 2682.51 us min, 24.997 GB/s, stream 2665.53 us/copy, submit 2665.26 us/copy
+Check: ok
+=== opencl_67108864_pinned_sdma0 16:19:59
+H2D: 2705.08 us median, 2696.92 us min, 24.808 GB/s, stream 2671.37 us/copy, submit 1.94 us/copy
+D2H: 2653.90 us median, 2637.25 us min, 25.287 GB/s, stream 2615.49 us/copy, submit 2.03 us/copy
+Check: ok
+=== opencl_67108864_pageable_sdma0 16:20:00
+H2D: 2733.42 us median, 2730.21 us min, 24.551 GB/s, stream 2705.27 us/copy, submit 1.66 us/copy
+D2H: 2661.87 us median, 2658.07 us min, 25.211 GB/s, stream 2642.13 us/copy, submit 1.48 us/copy
+Check: ok
+=== acpp_67108864_pinned_sdma0 16:20:01
+H2D: 2669.64 us median, 2668.61 us min, 25.138 GB/s, stream 2684.51 us/copy, submit 23.60 us/copy
+D2H: 2569.22 us median, 2561.94 us min, 26.120 GB/s, stream 2551.96 us/copy, submit 23.52 us/copy
+Check: ok
+=== acpp_67108864_pageable_sdma0 16:20:02
+H2D: 2805.13 us median, 2787.01 us min, 23.924 GB/s, stream 2771.88 us/copy, submit 2768.81 us/copy
+D2H: 2684.48 us median, 2679.77 us min, 24.999 GB/s, stream 2673.55 us/copy, submit 2670.95 us/copy
+Check: ok
+=== dpcpp_67108864_pinned_sdma0 16:20:04
+H2D: 2673.86 us median, 2668.36 us min, 25.098 GB/s, stream 2688.60 us/copy, submit 21.41 us/copy
+D2H: 2567.38 us median, 2551.10 us min, 26.139 GB/s, stream 2547.26 us/copy, submit 18.82 us/copy
+Check: ok
+=== dpcpp_67108864_pageable_sdma0 16:20:05
+H2D: 2792.30 us median, 2783.70 us min, 24.034 GB/s, stream 2792.68 us/copy, submit 2789.27 us/copy
+D2H: 2681.08 us median, 2674.64 us min, 25.031 GB/s, stream 2669.71 us/copy, submit 2666.79 us/copy
+Check: ok
+=== celerity_acpp_67108864_celerity_sdma0 16:20:06
+H2D: 1870.77 us median, 1852.28 us min, 35.872 GB/s, stream 863.72 us/copy, submit 2.63 us/copy
+D2H: 1735.70 us median, 1724.08 us min, 38.664 GB/s, stream 1706.43 us/copy, submit 0.80 us/copy
+H2D tasks: 1929.11 us median, 1909.63 us min, 34.787 GB/s, stream 1868.23 us/copy, submit 7.26 us/copy
+H2D base: 58.33 us median, 57.35 us min, 1150.425 GB/s, stream 1004.51 us/copy, submit 4.63 us/copy
+D2H tasks: 1793.17 us median, 1777.90 us min, 37.425 GB/s, stream 1734.41 us/copy, submit 5.06 us/copy
+D2H base: 57.47 us median, 53.83 us min, 1167.679 GB/s, stream 27.98 us/copy, submit 4.26 us/copy
+Check: ok
+=== celerity_dpcpp0326_67108864_celerity_sdma0 16:20:08
+H2D: 1712.53 us median, 1692.23 us min, 39.187 GB/s, stream -728.11 us/copy, submit 4.09 us/copy
+D2H: 1752.10 us median, 1732.65 us min, 38.302 GB/s, stream 1690.81 us/copy, submit 2.74 us/copy
+H2D tasks: 1781.39 us median, 1759.59 us min, 37.672 GB/s, stream 1726.62 us/copy, submit 7.10 us/copy
+H2D base: 68.86 us median, 67.36 us min, 974.527 GB/s, stream 2454.72 us/copy, submit 3.01 us/copy
+D2H tasks: 1823.03 us median, 1793.16 us min, 36.812 GB/s, stream 1733.81 us/copy, submit 6.30 us/copy
+D2H base: 70.93 us median, 60.52 us min, 946.155 GB/s, stream 43.00 us/copy, submit 3.56 us/copy
+Check: ok
+=== hip_65536_pinned_sdma1 16:20:10
+H2D: 29.55 us median, 28.89 us min, 2.218 GB/s, stream 16.48 us/copy, submit 12.46 us/copy
+D2H: 29.58 us median, 27.53 us min, 2.216 GB/s, stream 16.06 us/copy, submit 10.83 us/copy
+Check: ok
+=== hip_65536_pageable_sdma1 16:20:11
+H2D: 38.76 us median, 35.96 us min, 1.691 GB/s, stream 23.89 us/copy, submit 18.05 us/copy
+D2H: 68.11 us median, 66.67 us min, 0.962 GB/s, stream 67.73 us/copy, submit 67.27 us/copy
+Check: ok
+=== opencl_65536_pinned_sdma1 16:20:12
+H2D: 42.14 us median, 39.96 us min, 1.555 GB/s, stream 25.95 us/copy, submit 1.43 us/copy
+D2H: 34.27 us median, 33.10 us min, 1.913 GB/s, stream 21.56 us/copy, submit 0.73 us/copy
+Check: ok
+=== opencl_65536_pageable_sdma1 16:20:13
+H2D: 45.26 us median, 38.67 us min, 1.448 GB/s, stream 26.94 us/copy, submit 0.81 us/copy
+D2H: 38.77 us median, 32.93 us min, 1.690 GB/s, stream 26.11 us/copy, submit 0.90 us/copy
+Check: ok
+=== acpp_65536_pinned_sdma1 16:20:15
+H2D: 40.34 us median, 36.42 us min, 1.625 GB/s, stream 25.06 us/copy, submit 22.01 us/copy
+D2H: 43.10 us median, 39.03 us min, 1.520 GB/s, stream 25.72 us/copy, submit 22.97 us/copy
+Check: ok
+=== acpp_65536_pageable_sdma1 16:20:16
+H2D: 52.53 us median, 51.17 us min, 1.248 GB/s, stream 37.62 us/copy, submit 34.07 us/copy
+D2H: 94.46 us median, 93.73 us min, 0.694 GB/s, stream 72.36 us/copy, submit 69.78 us/copy
+Check: ok
+=== dpcpp_65536_pinned_sdma1 16:20:17
+H2D: 49.81 us median, 42.84 us min, 1.316 GB/s, stream 29.25 us/copy, submit 22.80 us/copy
+D2H: 53.62 us median, 42.33 us min, 1.222 GB/s, stream 25.17 us/copy, submit 22.44 us/copy
+Check: ok
+=== dpcpp_65536_pageable_sdma1 16:20:18
+H2D: 50.05 us median, 47.36 us min, 1.309 GB/s, stream 38.90 us/copy, submit 32.74 us/copy
+D2H: 99.74 us median, 97.30 us min, 0.657 GB/s, stream 77.27 us/copy, submit 74.66 us/copy
+Check: ok
+=== celerity_acpp_65536_celerity_sdma1 16:20:19
+H2D: 97.34 us median, 89.55 us min, 0.673 GB/s, stream -945.64 us/copy, submit 2.99 us/copy
+D2H: 77.01 us median, 55.95 us min, 0.851 GB/s, stream 37.48 us/copy, submit 2.60 us/copy
+H2D tasks: 157.31 us median, 139.35 us min, 0.417 GB/s, stream 64.26 us/copy, submit 7.22 us/copy
+H2D base: 59.98 us median, 49.80 us min, 1.093 GB/s, stream 1009.90 us/copy, submit 4.23 us/copy
+D2H tasks: 128.44 us median, 104.26 us min, 0.510 GB/s, stream 66.70 us/copy, submit 6.61 us/copy
+D2H base: 51.43 us median, 48.31 us min, 1.274 GB/s, stream 29.22 us/copy, submit 4.01 us/copy
+Check: ok
+=== celerity_dpcpp0326_65536_celerity_sdma1 16:20:20
+H2D: 60.31 us median, 55.24 us min, 1.087 GB/s, stream -2014.76 us/copy, submit 6.01 us/copy
+D2H: 88.22 us median, 71.49 us min, 0.743 GB/s, stream 48.54 us/copy, submit 3.68 us/copy
+H2D tasks: 138.88 us median, 127.35 us min, 0.472 GB/s, stream 74.43 us/copy, submit 8.92 us/copy
+H2D base: 78.57 us median, 72.11 us min, 0.834 GB/s, stream 2089.19 us/copy, submit 2.91 us/copy
+D2H tasks: 169.51 us median, 141.92 us min, 0.387 GB/s, stream 90.10 us/copy, submit 6.85 us/copy
+D2H base: 81.29 us median, 70.43 us min, 0.806 GB/s, stream 41.56 us/copy, submit 3.17 us/copy
+Check: ok
+=== hip_67108864_pinned_sdma1 16:20:21
+H2D: 2666.25 us median, 2658.13 us min, 25.170 GB/s, stream 2689.38 us/copy, submit 11.15 us/copy
+D2H: 2695.31 us median, 2694.42 us min, 24.898 GB/s, stream 2705.52 us/copy, submit 552.03 us/copy
+Check: ok
+=== hip_67108864_pageable_sdma1 16:20:23
+H2D: 2722.79 us median, 2718.56 us min, 24.647 GB/s, stream 2755.01 us/copy, submit 2754.05 us/copy
+D2H: 2775.86 us median, 2774.53 us min, 24.176 GB/s, stream 2757.13 us/copy, submit 2756.29 us/copy
+Check: ok
+=== opencl_67108864_pinned_sdma1 16:20:24
+H2D: 2680.63 us median, 2677.88 us min, 25.035 GB/s, stream 2672.98 us/copy, submit 0.87 us/copy
+D2H: 2715.10 us median, 2710.20 us min, 24.717 GB/s, stream 2708.17 us/copy, submit 0.90 us/copy
+Check: ok
+=== opencl_67108864_pageable_sdma1 16:20:25
+H2D: 2748.11 us median, 2744.67 us min, 24.420 GB/s, stream 2710.82 us/copy, submit 1.78 us/copy
+D2H: 2767.52 us median, 2763.99 us min, 24.249 GB/s, stream 2738.34 us/copy, submit 1.80 us/copy
+Check: ok
+=== acpp_67108864_pinned_sdma1 16:20:26
+H2D: 2667.90 us median, 2666.60 us min, 25.154 GB/s, stream 3264.24 us/copy, submit 1116.15 us/copy
+D2H: 2706.26 us median, 2701.95 us min, 24.798 GB/s, stream 2700.86 us/copy, submit 554.64 us/copy
+Check: ok
+=== acpp_67108864_pageable_sdma1 16:20:28
+H2D: 2821.34 us median, 2796.35 us min, 23.786 GB/s, stream 2783.82 us/copy, submit 2780.63 us/copy
+D2H: 2782.07 us median, 2774.53 us min, 24.122 GB/s, stream 2767.50 us/copy, submit 2764.90 us/copy
+Check: ok
+=== dpcpp_67108864_pinned_sdma1 16:20:29
+H2D: 2668.89 us median, 2664.11 us min, 25.145 GB/s, stream 3275.09 us/copy, submit 1128.87 us/copy
+D2H: 2702.35 us median, 2701.05 us min, 24.834 GB/s, stream 2700.46 us/copy, submit 560.92 us/copy
+Check: ok
+=== dpcpp_67108864_pageable_sdma1 16:20:30
+H2D: 2813.10 us median, 2804.90 us min, 23.856 GB/s, stream 2792.54 us/copy, submit 2787.13 us/copy
+D2H: 2773.60 us median, 2772.65 us min, 24.196 GB/s, stream 2759.97 us/copy, submit 2757.06 us/copy
+Check: ok
+=== celerity_acpp_67108864_celerity_sdma1 16:20:31
+H2D: 2458.12 us median, 2457.12 us min, 27.301 GB/s, stream 1460.86 us/copy, submit 2.08 us/copy
+D2H: 2628.27 us median, 2628.55 us min, 25.533 GB/s, stream 2579.21 us/copy, submit 3.35 us/copy
+H2D tasks: 2520.04 us median, 2514.61 us min, 26.630 GB/s, stream 2487.50 us/copy, submit 7.10 us/copy
+H2D base: 61.92 us median, 57.48 us min, 1083.799 GB/s, stream 1026.64 us/copy, submit 5.02 us/copy
+D2H tasks: 2688.47 us median, 2683.95 us min, 24.962 GB/s, stream 2611.71 us/copy, submit 7.99 us/copy
+D2H base: 60.20 us median, 55.40 us min, 1114.839 GB/s, stream 32.51 us/copy, submit 4.64 us/copy
+Check: ok
+=== celerity_dpcpp0326_67108864_celerity_sdma1 16:20:33
+H2D: 2433.83 us median, 2443.29 us min, 27.573 GB/s, stream 363.27 us/copy, submit 3.33 us/copy
+D2H: 2621.83 us median, 2630.16 us min, 25.596 GB/s, stream 2573.24 us/copy, submit 2.48 us/copy
+H2D tasks: 2526.65 us median, 2513.38 us min, 26.560 GB/s, stream 2480.08 us/copy, submit 8.19 us/copy
+H2D base: 92.82 us median, 70.10 us min, 722.992 GB/s, stream 2116.81 us/copy, submit 4.86 us/copy
+D2H tasks: 2698.28 us median, 2695.70 us min, 24.871 GB/s, stream 2616.79 us/copy, submit 6.25 us/copy
+D2H base: 76.45 us median, 65.54 us min, 877.825 GB/s, stream 43.55 us/copy, submit 3.77 us/copy
+Check: ok

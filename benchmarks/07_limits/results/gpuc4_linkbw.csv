@@ -1,0 +1,325 @@
+iteration,application,command,runtime_sec,gbps,load_gbps,machine,env,mib,test
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.13641856610774994,18.565,,gpuc4,,1,dma_h2d
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.13093382865190506,11.683,,gpuc4,,4,dma_h2d
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.14282623678445816,11.411,,gpuc4,,16,dma_h2d
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.1961205042898655,11.583,,gpuc4,,64,dma_h2d
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.3692726008594036,11.639,,gpuc4,,256,dma_h2d
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,1.080254040658474,11.605,,gpuc4,,1024,dma_h2d
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.13028526306152344,20.165,,gpuc4,,1,dma_d2h
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.13290836662054062,11.173,,gpuc4,,4,dma_d2h
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.14500932022929192,11.318,,gpuc4,,16,dma_d2h
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.19367391243577003,11.346,,gpuc4,,64,dma_d2h
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.3713369406759739,11.263,,gpuc4,,256,dma_d2h
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,1.0939996801316738,11.222,,gpuc4,,1024,dma_d2h
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.13474052399396896,13.183,,gpuc4,,1,dma_bidir
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.1431637406349182,15.436,,gpuc4,,4,dma_bidir
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.15556656941771507,15.621,,gpuc4,,16,dma_bidir
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.23670559376478195,14.709,,gpuc4,,64,dma_bidir
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.534957367926836,15.631,,gpuc4,,256,dma_bidir
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,1.7067449614405632,15.624,,gpuc4,,1024,dma_bidir
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.12359200417995453,19.755,,gpuc4,,1,kernel_read
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.13613693043589592,13.653,,gpuc4,,4,kernel_read
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.1477118879556656,13.074,,gpuc4,,16,kernel_read
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.17989373952150345,11.953,,gpuc4,,64,kernel_read
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.37821316346526146,10.143,,gpuc4,,256,kernel_read
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,1.190327025949955,9.547,,gpuc4,,1024,kernel_read
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.12242187187075615,21.277,,gpuc4,,1,kernel_write
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.13122182339429855,14.390,,gpuc4,,4,kernel_write
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.14372021332383156,13.497,,gpuc4,,16,kernel_write
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.1959482692182064,10.476,,gpuc4,,64,kernel_write
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.38702572882175446,9.642,,gpuc4,,256,kernel_write
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,1.2167558558285236,9.210,,gpuc4,,1024,kernel_write
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.12121359258890152,6.648,,gpuc4,,1,kernel_read_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.12739958614110947,6.782,,gpuc4,,4,kernel_read_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.15249307453632355,6.914,,gpuc4,,16,kernel_read_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.24437402561306953,5.476,,gpuc4,,64,kernel_read_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.642964344471693,4.939,,gpuc4,,256,kernel_read_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,2.2767437882721424,4.598,,gpuc4,,1024,kernel_read_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.12613780051469803,3.442,,gpuc4,,1,kernel_read_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.13461128622293472,3.188,,gpuc4,,4,kernel_read_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.18900881335139275,3.012,,gpuc4,,16,kernel_read_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.37685586139559746,2.643,,gpuc4,,64,kernel_read_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,1.1690761782228947,2.458,,gpuc4,,256,kernel_read_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,4.368502862751484,2.295,,gpuc4,,1024,kernel_read_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.16573846712708473,0.153,,gpuc4,,1,kernel_write_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.29519978165626526,0.155,,gpuc4,,4,kernel_write_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.7905241698026657,0.155,,gpuc4,,16,kernel_write_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,2.7849664725363255,0.155,,gpuc4,,64,kernel_write_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,10.875753901898861,0.155,,gpuc4,,256,kernel_write_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,42.541306890547276,0.155,,gpuc4,,1024,kernel_write_s2
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.15913252532482147,0.178,,gpuc4,,1,kernel_write_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.2676212266087532,0.179,,gpuc4,,4,kernel_write_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.7104117795825005,0.179,,gpuc4,,16,kernel_write_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,2.463957842439413,0.180,,gpuc4,,64,kernel_write_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,9.470441963523626,0.180,,gpuc4,,256,kernel_write_s4
+1,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,37.40652783960104,0.180,,gpuc4,,1024,kernel_write_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.0022433921694755554,,,gpuc4,HSA_ENABLE_SDMA=0,1,dma_h2d
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.001673780381679535,,,gpuc4,HSA_ENABLE_SDMA=0,4,dma_h2d
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.0013636313378810883,,,gpuc4,HSA_ENABLE_SDMA=0,16,dma_h2d
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.0013135261833667755,,,gpuc4,HSA_ENABLE_SDMA=0,64,dma_h2d
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.0012514293193817139,,,gpuc4,HSA_ENABLE_SDMA=0,256,dma_h2d
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,0.0012785568833351135,,,gpuc4,HSA_ENABLE_SDMA=0,1024,dma_h2d
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.0012867823243141174,,,gpuc4,HSA_ENABLE_SDMA=0,1,dma_d2h
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.0012609101831912994,,,gpuc4,HSA_ENABLE_SDMA=0,4,dma_d2h
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.0012857429683208466,,,gpuc4,HSA_ENABLE_SDMA=0,16,dma_d2h
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.0013486556708812714,,,gpuc4,HSA_ENABLE_SDMA=0,64,dma_d2h
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.0012871958315372467,,,gpuc4,HSA_ENABLE_SDMA=0,256,dma_d2h
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,0.0012862272560596466,,,gpuc4,HSA_ENABLE_SDMA=0,1024,dma_d2h
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.001283198595046997,,,gpuc4,HSA_ENABLE_SDMA=0,1,dma_bidir
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.0012940466403961182,,,gpuc4,HSA_ENABLE_SDMA=0,4,dma_bidir
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.0013772733509540558,,,gpuc4,HSA_ENABLE_SDMA=0,16,dma_bidir
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.0014562234282493591,,,gpuc4,HSA_ENABLE_SDMA=0,64,dma_bidir
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.0015377290546894073,,,gpuc4,HSA_ENABLE_SDMA=0,256,dma_bidir
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,0.0016961544752120972,,,gpuc4,HSA_ENABLE_SDMA=0,1024,dma_bidir
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.001856919378042221,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_read
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.0021680258214473724,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_read
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.0024514421820640564,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_read
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.003020547330379486,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_read
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.0032034851610660553,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_read
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,0.0031413771212100983,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_read
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.0036196671426296234,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_write
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.003763202577829361,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_write
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.004100341349840164,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_write
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.004277538508176804,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_write
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.004357472062110901,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_write
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,0.003940898925065994,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_write
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.004099339246749878,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_read_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.004474908113479614,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_read_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.004108671098947525,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_read_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.004628211259841919,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_read_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.0042076557874679565,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_read_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,0.005890555679798126,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_read_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.005634043365716934,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_read_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.0057275183498859406,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_read_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.005642112344503403,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_read_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.005598977208137512,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_read_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,0.005495984107255936,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_read_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,0.005402661859989166,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_read_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.004795055836439133,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_write_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.005192864686250687,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_write_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.005507353693246841,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_write_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,0.005465790629386902,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_write_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,0.005470506846904755,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_write_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,0.0049511343240737915,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_write_s2
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.0051370784640312195,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_write_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.0054988861083984375,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_write_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.005492046475410461,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_write_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,0.0053849779069423676,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_write_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,0.00524241104722023,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_write_s4
+1,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,0.005366917699575424,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_write_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.15107449144124985,16.201,,gpuc4,,1,dma_h2d
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.13929874077439308,11.302,,gpuc4,,4,dma_h2d
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.15175815671682358,11.514,,gpuc4,,16,dma_h2d
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.19485782459378242,11.558,,gpuc4,,64,dma_h2d
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.3651580587029457,11.652,,gpuc4,,256,dma_h2d
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,1.065191637724638,11.652,,gpuc4,,1024,dma_h2d
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.12753552570939064,19.332,,gpuc4,,1,dma_d2h
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.13925786688923836,11.078,,gpuc4,,4,dma_d2h
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.14681730046868324,11.182,,gpuc4,,16,dma_d2h
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.1997845359146595,11.325,,gpuc4,,64,dma_d2h
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.37008169293403625,11.238,,gpuc4,,256,dma_d2h
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,1.088202029466629,11.213,,gpuc4,,1024,dma_d2h
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.13372738286852837,15.144,,gpuc4,,1,dma_bidir
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.13934893533587456,15.394,,gpuc4,,4,dma_bidir
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.16453738883137703,15.640,,gpuc4,,16,dma_bidir
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.23537582531571388,14.732,,gpuc4,,64,dma_bidir
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.5410505011677742,15.661,,gpuc4,,256,dma_bidir
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,1.692549392580986,15.754,,gpuc4,,1024,dma_bidir
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.12390832975506783,19.965,,gpuc4,,1,kernel_read
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.1290823519229889,13.598,,gpuc4,,4,kernel_read
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.13489901646971703,13.066,,gpuc4,,16,kernel_read
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.1829642727971077,11.883,,gpuc4,,64,kernel_read
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.3771330341696739,10.239,,gpuc4,,256,kernel_read
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,1.1804586574435234,9.558,,gpuc4,,1024,kernel_read
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.12120955064892769,21.347,,gpuc4,,1,kernel_write
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.12643495202064514,14.258,,gpuc4,,4,kernel_write
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.13648905605077744,13.489,,gpuc4,,16,kernel_write
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.18692795559763908,10.527,,gpuc4,,64,kernel_write
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.3925367146730423,9.598,,gpuc4,,256,kernel_write
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,1.2117143981158733,9.175,,gpuc4,,1024,kernel_write
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.1230207197368145,6.529,,gpuc4,,1,kernel_read_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.12700753286480904,6.755,,gpuc4,,4,kernel_read_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.14868417754769325,6.937,,gpuc4,,16,kernel_read_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.2419642023742199,5.538,,gpuc4,,64,kernel_read_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.6471190191805363,4.918,,gpuc4,,256,kernel_read_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,2.268296130001545,4.598,,gpuc4,,1024,kernel_read_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.12567458674311638,3.427,,gpuc4,,1,kernel_read_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.1476680524647236,3.203,,gpuc4,,4,kernel_read_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.17906056717038155,2.989,,gpuc4,,16,kernel_read_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.3700704723596573,2.643,,gpuc4,,64,kernel_read_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,1.1634857058525085,2.455,,gpuc4,,256,kernel_read_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,4.369929175823927,2.291,,gpuc4,,1024,kernel_read_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.16564299911260605,0.154,,gpuc4,,1,kernel_write_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.28852836042642593,0.154,,gpuc4,,4,kernel_write_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.7892655618488789,0.155,,gpuc4,,16,kernel_write_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,2.8039716966450214,0.155,,gpuc4,,64,kernel_write_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,10.73669633641839,0.155,,gpuc4,,256,kernel_write_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,42.51718769967556,0.155,,gpuc4,,1024,kernel_write_s2
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.15919772535562515,0.178,,gpuc4,,1,kernel_write_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.2766771800816059,0.179,,gpuc4,,4,kernel_write_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.714196790009737,0.179,,gpuc4,,16,kernel_write_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,2.472295355051756,0.180,,gpuc4,,64,kernel_write_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,9.471541583538055,0.180,,gpuc4,,256,kernel_write_s4
+2,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,37.39863903447986,0.180,,gpuc4,,1024,kernel_write_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.001983039081096649,,,gpuc4,HSA_ENABLE_SDMA=0,1,dma_h2d
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.0013921074569225311,,,gpuc4,HSA_ENABLE_SDMA=0,4,dma_h2d
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.0013178065419197083,,,gpuc4,HSA_ENABLE_SDMA=0,16,dma_h2d
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.0013587698340415955,,,gpuc4,HSA_ENABLE_SDMA=0,64,dma_h2d
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.0012869909405708313,,,gpuc4,HSA_ENABLE_SDMA=0,256,dma_h2d
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,0.0012329518795013428,,,gpuc4,HSA_ENABLE_SDMA=0,1024,dma_h2d
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.001267697662115097,,,gpuc4,HSA_ENABLE_SDMA=0,1,dma_d2h
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.0012980252504348755,,,gpuc4,HSA_ENABLE_SDMA=0,4,dma_d2h
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.0013147667050361633,,,gpuc4,HSA_ENABLE_SDMA=0,16,dma_d2h
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.001246914267539978,,,gpuc4,HSA_ENABLE_SDMA=0,64,dma_d2h
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.0012514926493167877,,,gpuc4,HSA_ENABLE_SDMA=0,256,dma_d2h
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,0.0012466758489608765,,,gpuc4,HSA_ENABLE_SDMA=0,1024,dma_d2h
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.0012451745569705963,,,gpuc4,HSA_ENABLE_SDMA=0,1,dma_bidir
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.001324191689491272,,,gpuc4,HSA_ENABLE_SDMA=0,4,dma_bidir
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.0014210566878318787,,,gpuc4,HSA_ENABLE_SDMA=0,16,dma_bidir
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.0014733001589775085,,,gpuc4,HSA_ENABLE_SDMA=0,64,dma_bidir
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.0015866421163082123,,,gpuc4,HSA_ENABLE_SDMA=0,256,dma_bidir
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,0.0018347389996051788,,,gpuc4,HSA_ENABLE_SDMA=0,1024,dma_bidir
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.0016390308737754822,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_read
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.0018944703042507172,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_read
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.002205636352300644,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_read
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.002520982176065445,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_read
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.0029453635215759277,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_read
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,0.0031014569103717804,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_read
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.0039501674473285675,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_write
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.003779575228691101,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_write
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.004158809781074524,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_write
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.003849770873785019,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_write
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.004216603934764862,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_write
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,0.0035678669810295105,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_write
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.0038954466581344604,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_read_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.003495108336210251,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_read_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.0038413815200328827,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_read_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.004517965018749237,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_read_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.005240842700004578,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_read_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,0.005235843360424042,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_read_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.00546075776219368,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_read_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.005680091679096222,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_read_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.005729682743549347,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_read_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.005776666104793549,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_read_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,0.005727753043174744,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_read_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,0.005819898098707199,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_read_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.005850203335285187,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_write_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.005873631685972214,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_write_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.005859982222318649,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_write_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,0.006017863750457764,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_write_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,0.005668751895427704,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_write_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,0.00581137090921402,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_write_s2
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.005492266267538071,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_write_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.005800962448120117,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_write_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.005605719983577728,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_write_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,0.005709890276193619,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_write_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,0.00519147515296936,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_write_s4
+2,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,0.0054653845727443695,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_write_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.14501334726810455,18.281,,gpuc4,,1,dma_h2d
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.13309741765260696,11.281,,gpuc4,,4,dma_h2d
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.14292869716882706,11.509,,gpuc4,,16,dma_h2d
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.1838226653635502,11.610,,gpuc4,,64,dma_h2d
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.3675813712179661,11.628,,gpuc4,,256,dma_h2d
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,1.065393477678299,11.653,,gpuc4,,1024,dma_h2d
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.12705236300826073,19.965,,gpuc4,,1,dma_d2h
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.1361888125538826,10.984,,gpuc4,,4,dma_d2h
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.14769752696156502,11.222,,gpuc4,,16,dma_d2h
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.19291510060429573,11.326,,gpuc4,,64,dma_d2h
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.37757834792137146,11.250,,gpuc4,,256,dma_d2h
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,1.0861670337617397,11.222,,gpuc4,,1024,dma_d2h
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.13438164070248604,13.453,,gpuc4,,1,dma_bidir
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.14825452491641045,15.080,,gpuc4,,4,dma_bidir
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.15853862836956978,15.365,,gpuc4,,16,dma_bidir
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.24758021906018257,14.666,,gpuc4,,64,dma_bidir
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.5360455438494682,15.603,,gpuc4,,256,dma_bidir
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,1.7114959619939327,15.399,,gpuc4,,1024,dma_bidir
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.12492090463638306,19.710,,gpuc4,,1,kernel_read
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.1341480202972889,13.402,,gpuc4,,4,kernel_read
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.1486719399690628,12.996,,gpuc4,,16,kernel_read
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.19377363473176956,12.001,,gpuc4,,64,kernel_read
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.3773110806941986,10.207,,gpuc4,,256,kernel_read
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,1.18112738057971,9.511,,gpuc4,,1024,kernel_read
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.12251997739076614,21.089,,gpuc4,,1,kernel_write
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.132241353392601,14.274,,gpuc4,,4,kernel_write
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.14169738069176674,13.563,,gpuc4,,16,kernel_write
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.19311677664518356,10.289,,gpuc4,,64,kernel_write
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.3873831294476986,9.606,,gpuc4,,256,kernel_write
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,1.2061835825443268,9.197,,gpuc4,,1024,kernel_write
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.12423825263977051,6.691,,gpuc4,,1,kernel_read_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.1433776617050171,6.752,,gpuc4,,4,kernel_read_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.1474313624203205,6.938,,gpuc4,,16,kernel_read_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.24328605830669403,5.526,,gpuc4,,64,kernel_read_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.6453730016946793,4.930,,gpuc4,,256,kernel_read_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,2.2755855098366737,4.593,,gpuc4,,1024,kernel_read_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.12596021965146065,3.350,,gpuc4,,1,kernel_read_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.14187807589769363,3.269,,gpuc4,,4,kernel_read_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.179814912378788,3.022,,gpuc4,,16,kernel_read_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.3708936721086502,2.645,,gpuc4,,64,kernel_read_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,1.1657892726361752,2.447,,gpuc4,,256,kernel_read_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,4.377994917333126,2.279,,gpuc4,,1024,kernel_read_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.16549771651625633,0.155,,gpuc4,,1,kernel_write_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.30297570303082466,0.155,,gpuc4,,4,kernel_write_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.7929446175694466,0.155,,gpuc4,,16,kernel_write_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,2.788995388895273,0.155,,gpuc4,,64,kernel_write_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,10.737778034061193,0.155,,gpuc4,,256,kernel_write_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,42.52042639628053,0.155,,gpuc4,,1024,kernel_write_s2
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.1617177464067936,0.178,,gpuc4,,1,kernel_write_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.2826196029782295,0.179,,gpuc4,,4,kernel_write_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.7130607105791569,0.179,,gpuc4,,16,kernel_write_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,2.4727804102003574,0.180,,gpuc4,,64,kernel_write_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,9.47497570887208,0.180,,gpuc4,,256,kernel_write_s4
+3,linkbw,hostname; taskset -c 1  ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,37.40663481876254,0.180,,gpuc4,,1024,kernel_write_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1 5,0.0020618736743927,,,gpuc4,HSA_ENABLE_SDMA=0,1,dma_h2d
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 4 5,0.0015478692948818207,,,gpuc4,HSA_ENABLE_SDMA=0,4,dma_h2d
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 16 5,0.0014207921922206879,,,gpuc4,HSA_ENABLE_SDMA=0,16,dma_h2d
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 64 5,0.0013860687613487244,,,gpuc4,HSA_ENABLE_SDMA=0,64,dma_h2d
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 256 5,0.0012931153178215027,,,gpuc4,HSA_ENABLE_SDMA=0,256,dma_h2d
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_h2d 1024 5,0.0013249292969703674,,,gpuc4,HSA_ENABLE_SDMA=0,1024,dma_h2d
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1 5,0.0013538561761379242,,,gpuc4,HSA_ENABLE_SDMA=0,1,dma_d2h
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 4 5,0.0013736076653003693,,,gpuc4,HSA_ENABLE_SDMA=0,4,dma_d2h
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 16 5,0.001355540007352829,,,gpuc4,HSA_ENABLE_SDMA=0,16,dma_d2h
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 64 5,0.0013180896639823914,,,gpuc4,HSA_ENABLE_SDMA=0,64,dma_d2h
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 256 5,0.0012893974781036377,,,gpuc4,HSA_ENABLE_SDMA=0,256,dma_d2h
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_d2h 1024 5,0.001248832792043686,,,gpuc4,HSA_ENABLE_SDMA=0,1024,dma_d2h
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1 5,0.0013022907078266144,,,gpuc4,HSA_ENABLE_SDMA=0,1,dma_bidir
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 4 5,0.0012726038694381714,,,gpuc4,HSA_ENABLE_SDMA=0,4,dma_bidir
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 16 5,0.0013269521296024323,,,gpuc4,HSA_ENABLE_SDMA=0,16,dma_bidir
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 64 5,0.0014139190316200256,,,gpuc4,HSA_ENABLE_SDMA=0,64,dma_bidir
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 256 5,0.0015519261360168457,,,gpuc4,HSA_ENABLE_SDMA=0,256,dma_bidir
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw dma_bidir 1024 5,0.0017919167876243591,,,gpuc4,HSA_ENABLE_SDMA=0,1024,dma_bidir
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1 5,0.0019622482359409332,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_read
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 4 5,0.0022976063191890717,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_read
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 16 5,0.002532031387090683,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_read
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 64 5,0.0027998797595500946,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_read
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 256 5,0.002815861254930496,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_read
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read 1024 5,0.002405703067779541,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_read
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1 5,0.002762977033853531,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_write
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 4 5,0.0024756193161010742,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_write
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 16 5,0.0026803165674209595,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_write
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 64 5,0.002447061240673065,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_write
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 256 5,0.002556055784225464,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_write
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write 1024 5,0.002688854932785034,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_write
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1 5,0.0028375498950481415,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_read_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 4 5,0.0027225948870182037,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_read_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 16 5,0.00256999209523201,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_read_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 64 5,0.0027393996715545654,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_read_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 256 5,0.002677474170923233,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_read_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s2 1024 5,0.002918645739555359,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_read_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1 5,0.002688281238079071,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_read_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 4 5,0.002807166427373886,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_read_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 16 5,0.002581983804702759,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_read_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 64 5,0.002669036388397217,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_read_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 256 5,0.002462197095155716,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_read_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_read_s4 1024 5,0.0025682561099529266,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_read_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1 5,0.002283066511154175,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_write_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 4 5,0.0025526955723762512,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_write_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 16 5,0.002327118068933487,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_write_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 64 5,0.002366352826356888,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_write_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 256 5,0.0026932284235954285,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_write_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s2 1024 5,0.002609390765428543,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_write_s2
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1 5,0.0030657686293125153,,,gpuc4,HSA_ENABLE_SDMA=0,1,kernel_write_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 4 5,0.0027680769562721252,,,gpuc4,HSA_ENABLE_SDMA=0,4,kernel_write_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 16 5,0.0029613859951496124,,,gpuc4,HSA_ENABLE_SDMA=0,16,kernel_write_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 64 5,0.003352869302034378,,,gpuc4,HSA_ENABLE_SDMA=0,64,kernel_write_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 256 5,0.002544090151786804,,,gpuc4,HSA_ENABLE_SDMA=0,256,kernel_write_s4
+3,linkbw,hostname; taskset -c 1 HSA_ENABLE_SDMA=0 ~/finalizing-work/benchmarks/limits/linkbw kernel_write_s4 1024 5,0.0027630627155303955,,,gpuc4,HSA_ENABLE_SDMA=0,1024,kernel_write_s4
